@@ -1,0 +1,467 @@
+﻿รหัสวิชา,ชื่อวิชา (ภาษาไทย),ชื่อวิชา (ภาษาอังกฤษ),กลุ่มเรียน,หน่วยกิต,สภาพวิชา
+00-000-041-001,,Life and Environment,EIE3Q, ,1.4
+02-005-011-211,,Calculus 3 for Engineers,EIE3Q, ,2.1.1
+31-407-051-204,,Safety Engineering,EIE3Q, ,2.2.1
+31-407-051-206,,Industrial Work Study,EIE3Q, ,2.2.1
+31-407-070-102,,Engineering Mechanics,EIE3Q, ,2.1.2
+31-407-073-019,,Basic Mechanical Engineering Laboratory,EIE3Q, ,2.1.2
+31-407-053-201,,Tool Engineering,EIE3Q, ,2.2
+31-407-056-002,,Computer Aided Design and Manufacturing,EIE3Q, ,2.2
+31-407-053-407,,Cooperative Education for Industrial Engineering,EIE4R1, ,2.2
+31-407-052-201,,Operations Research,EIE4R2, ,2.2.1
+31-407-053-406,,Production Engineering Project,EIE4R3, ,2.2.2
+31-407-053-407,,Cooperative Education for Industrial Engineering,EIE4Q, ,2.2
+31-407-387-309,,Fundamental Chemistry of Dairy and Beverage,EMM3R, ,2.2.3
+31-407-387-316,,Practice on Fundamental Processing of Dairy and Beverage,EMM3R, ,2.2.3
+31-407-387-311,,Fundamental Microbiology of Dairy and Beverage,EMM3R, ,2.2.3
+31-407-387-312,,Practice on Fundamental Microbiology of Dairy and Beverage,EMM3R, ,2.2.3
+31-407-387-313,,Equipment and Unit Operation for Dairy and Beverage Processing,EMM3R, ,2.2.3
+31-407-387-314,,Practice on Equipment and Unit Operation for Dairy and Beverage Processing,EMM3R, ,2.2.3
+31-407-387-317,,Utility Engineering for Dairy and Beverages Processing,EMM3R, ,2.2.3
+31-407-387-424,,Dairy and Beverage Engineering Pre-Project,EMM3R, ,2.2.3
+00-000-011-001,,Social Dynamics and Happy Living,EMT1N, ,1.1
+00-000-021-002,,Knowledge Management,EMT1N, ,1.2
+00-000-042-001,,Mathematics and Statistics for Daily Life,EMT1N, ,1.4
+02-405-011-109,,Calculus 1 for Engineers,EMT1N, ,2.1
+02-405-020-105,,Fundamentals of Chemistry,EMT1N, ,2.1
+02-405-020-106,,Fundamentals of Chemistry Laboratory,EMT1N, ,2.1
+31-407-050-102,,Engineering Drawing,EMT1N, ,2.1
+00-000-041-001,,Life and Environment,EMT2N, ,1.4
+02-405-011-110,,Calculus 2 for Engineers,EMT2N, ,2.1
+31-407-070-204,,Engineering Mechanics,EMT2N, ,2.1
+31-407-051-101,,Machine Tool Practice,EMT2N, ,2.2
+31-407-121-102,,Metallurgy of Metals Joining,EMT2N, ,2.2
+31-407-121-202,,Ferrous and Non Ferrous Metals,EMT2N, ,2.2
+31-407-121-203,,Foundry Engineering 1,EMT2N, ,2.2
+31-407-030-203,,Electrical Engineering Technology,EMT3N, ,2.1
+31-407-030-204,,Electrical Engineering Technology Laboratory,EMT3N, ,2.1
+31-407-050-104,,Engineering Statistics,EMT3N, ,2.2
+31-407-121-101,,Metal Forming,EMT3N, ,2.2
+31-407-121-301,,Thermal Treatment of Metals,EMT3N, ,2.2
+31-407-123-201,,Welding Engineering 1,EMT3N, ,2.3
+31-407-122-301,,Foundry Engineering 2,EMT3N, ,2.3
+31-407-122-302,,Pattern Design and Marking in Casting,EMT3N, ,2.3
+31-407-121-401,,Cooperative Education for Metallurgical,EMT4N, ,2.2
+00-000-011-001,,Social Dynamics and Happy Living,SCH2N, ,1.1
+00-000-034-001,,Chinese Conversation for Daily Life,SCH2N, ,1.3
+00-000-032-101,,Thai for Communication,SCH2N, ,1.3
+02-005-011-104,,Calculus 1,SCH2N, ,2.1
+02-005-020-101,,General Chemistry 1,SCH2N, ,2.1
+02-005-020-102,,General Chemistry Laboratory 1,SCH2N, ,2.1
+02-005-030-101,,Physics 1,SCH2N, ,2.1
+02-005-030-102,,Physics Laboratory 1,SCH2N, ,2.1
+00-000-023-001,,Sport and Recreation for Health,SCH2N, ,1.2
+02-005-040-102,,Biology,SCH2N, ,2.1
+02-005-040-103,,Biology Laboratory,SCH2N, ,2.1
+02-005-050-204,,Statistic 1,SCH2N, ,2.1
+31-405-021-201,,Inorganic Chemistry 1,SCH2N, ,2.2.1
+31-405-021-202,,Inorganic Chemistry Laboratory 1,SCH2N, ,2.2.1
+31-405-022-201,,Organic Chemistry 1,SCH2N, ,2.2.1
+31-405-022-202,,Organic Chemistry Laboratory 1,SCH2N, ,2.2.1
+31-405-027-201,,Chemicals and Safety,SCH2N, ,2.2.1
+02-405-021-301,,Inorganic Chemistry 1,SCH3N, ,2.2
+02-405-021-302,,Inorganic Chemistry Laboratory 1,SCH3N, ,2.2
+02-405-023-301,,Biochemistry,SCH3N, ,2.2
+02-405-023-302,,Biochemistry Laboratory,SCH3N, ,2.2
+02-405-025-305,,Separation Techniques,SCH3N, ,2.2
+02-405-025-306,,Separation Techniques Laboratory,SCH3N, ,2.2
+02-405-027-302,,Chemical and Safety,SCH3N, ,2.2
+02-005-050-204,,Statistics 1,SCH3N, ,2.1
+00-000-022-001,,Human Value:Arts and Sciences in Daily Living,SCH3N, ,1.2
+02-405-027-305,,Catalytic Chemistry,SCH4N, ,2.3
+02-405-026-301,,Chemical Process Industries,SCH4N, ,2.3
+02-405-028-301,,Seminar,SCH4N, ,2.2
+02-405-026-304,,Polymer Technology,SCH4N, ,3.
+02-405-025-310,,Selected Topics in Chemistry,SCH4N, ,3.
+00-000-011-001,,Social Dynamics and Happy Living,MIP1N, ,1.1
+00-000-031-101,,English for Study Skills Development,MIP1N, ,1.3
+00-000-032-101,,Thai for Communication,MIP1N, ,1.3
+02-005-020-101,,General Chemistry 1,MIP1N, ,2.1
+02-005-020-102,,General Chemistry Laboratory 1,MIP1N, ,2.1
+31-405-160-101,,General Physics 1,MIP1N, ,2.1
+31-405-160-102,,General Physics Laboratory 1,MIP1N, ,2.1
+31-405-160-103,,Fundamentals of Mathematics 1,MIP1N, ,2.1
+00-000-041-001,,Life and Environment,EIE3Q, ,1.4
+02-005-011-211,,Calculus 3 for Engineers,EIE3Q, ,2.1.1
+31-407-051-204,,Safety Engineering,EIE3Q, ,2.2.1
+31-407-051-206,,Industrial Work Study,EIE3Q, ,2.2.1
+31-407-070-102,,Engineering Mechanics,EIE3Q, ,2.1.2
+31-407-073-019,,Basic Mechanical Engineering Laboratory,EIE3Q, ,2.1.2
+31-407-053-201,,Tool Engineering,EIE3Q, ,2.2
+31-407-056-002,,Computer Aided Design and Manufacturing,EIE3Q, ,2.2
+00-000-041-001,,Life and Environment,EIE3R, ,1.4
+02-005-011-211,,Calculus 3 for Engineers,EIE3R, ,2.1.1
+31-407-051-204,,Safety Engineering,EIE3R, ,2.2.1
+31-407-051-206,,Industrial Work Study,EIE3R, ,2.2.1
+31-407-070-102,,Engineering Mechanics,EIE3R, ,2.1.2
+31-407-073-019,,Basic Mechanical Engineering Laboratory,EIE3R, ,2.1.2
+31-407-053-201,,Tool Engineering,EIE3R, ,2.2
+31-407-056-002,,Computer Aided Design and Manufacturing,EIE3R, ,2.2
+00-000-031-101,,English for Study Skills Development,EIE2Q, ,1.3
+00-000-042-001,,Mathematics and Statistics for Daily Life,EIE2Q, ,1.4
+02-005-011-109,,Calculus 1 for Engineers,EIE2Q, ,2.1.1
+02-005-030-101,,Physics 1,EIE2Q, ,2.1.1
+02-005-030-102,,Physics Laboratory 1,EIE2Q, ,2.1.1
+31-407-050-102,,Engineering Drawing,EIE2Q, ,2.1.2
+31-407-100-101,,Computer Programming,EIE2Q, ,2.1.2
+31-407-120-101,,Engineering Materials,EIE2Q, ,2.1.2
+00-000-031-101,,English for Study Skills Development,EIE2R, ,1.3
+00-000-042-001,,Mathematics and Statistics for Daily Life,EIE2R, ,1.4
+02-005-011-109,,Calculus 1 for Engineers,EIE2R, ,2.1.1
+02-005-030-101,,Physics 1,EIE2R, ,2.1.1
+02-005-030-102,,Physics Laboratory 1,EIE2R, ,2.1.1
+31-407-050-102,,Engineering Drawing,EIE2R, ,2.1.2
+31-407-100-101,,Computer Programming,EIE2R, ,2.1.2
+31-407-120-101,,Engineering Materials,EIE2R, ,2.1.2
+00-000-041-002,,Science and Modern Technology,EIE4N, ,1.4
+31-407-070-203,,Thermodynamics ,EIE4N, ,2.1
+31-407-050-305,,Industrial Engineering Laboratory,EIE4N, ,2.2
+31-407-051-310,,Engineering Economy,EIE4N, ,2.2
+31-407-053-303,,Automatic and Control System,EIE4N, ,2.2
+31-407-053-304,,Forming Process,EIE4N, ,2.2
+31-407-056-004,,Automatic Machine,EIE4N, ,2.2
+31-407-052-201,,Operations Research,EIE4N, ,2.2.1
+31-407-053-305,,Production Engineering Pre-Project,EIE4N, ,2.2.1
+31-407-054-007,,Design of Industrial Engineering Experiments,EIE4N, ,3.
+00-000-031-205,,English Conversation for Daily Life,EIE3N PE, ,1.3
+31-407-051-308,,Production Planning and Control,EIE3N PE, ,2.2
+31-407-051-307,,Quality Control,EIE3N PE, ,2.2
+31-407-051-309,,Industrial Plant Design,EIE3N PE, ,2.2
+31-407-052-202,,Maintenance Engineering,EIE3N PE, ,2.2
+31-407-053-305,,Production Engineering Pre-Project,EIE3N PE, ,2.2
+31-407-056-010,,Design of Production Engineering Experiments,EIE3N PE, ,2.2
+31-407-053-202,,Machine Tool,EIE3N PE, ,2.2
+00-000-031-205,,English Conversation for Daily Life,EIE3N IE, ,1.3
+31-407-051-308,,Production Planning and Control,EIE3N IE, ,2.2
+31-407-051-307,,Quality Control,EIE3N IE, ,2.2
+31-407-051-309,,Industrial Plant Design,EIE3N IE, ,2.2
+31-407-052-202,,Maintenance Engineering,EIE3N IE, ,2.2
+31-407-052-305,,Industrial Engineering Pre-Project,EIE3N IE, ,2.2
+31-407-054-007,,Design of Industrial Engineering Experiments,EIE3N IE, ,2.2
+31-407-056-004,,Automatic Machine ,EIE3N IE, ,2.2
+00-000-041-002,,Science and Modern Technology,EIE2N2 , ,1.4
+02-005-011-110,,Calculus 2 for Engineers,EIE2N2 , ,2.1.1
+02-005-020-105,,Fundamentals of Chemistry,EIE2N2 , ,2.1.1
+02-005-020-106,,Fundamentals of Chemistry Laboratory,EIE2N2 , ,2.1.1
+31-407-050-204,,Engineering Statistics,EIE2N2 , ,2.1.2
+31-407-051-202,,Welding and Sheet Metal Practice,EIE2N2 , ,2.2.1
+31-407-100-101,,Computer Programming,EIE2N2 , ,2.1.2
+31-407-120-101,,Engineering Materials,EIE2N2 , ,2.1.2
+00-000-041-002,,Science and Modern Technology,EIE2N1, ,1.4
+02-005-011-110,,Calculus 2 for Engineers,EIE2N1, ,2.1.1
+02-005-020-105,,Fundamentals of Chemistry,EIE2N1, ,2.1.1
+02-005-020-106,,Fundamentals of Chemistry Laboratory,EIE2N1, ,2.1.1
+31-407-050-204,,Engineering Statistics,EIE2N1, ,2.1.2
+31-407-051-202,,Welding and Sheet Metal Practice,EIE2N1, ,2.2.1
+31-407-100-101,,Computer Programming,EIE2N1, ,2.1.2
+31-407-120-101,,Engineering Materials,EIE2N1, ,2.1.2
+00-000-011-001,,Social Dynamics and Happy Living,EIE1N2, ,1.1
+00-000-022-001,,Human Value : Arts and Sciences in Daily Living,EIE1N2, ,1.2
+00-000-031-101,,English for Study Skills Development,EIE1N2, ,1.3
+02-005-030-101,,Physics 1,EIE1N2, ,2.1.1
+02-005-030-102,,Physics Laboratory 1,EIE1N2, ,2.1.1
+31-407-030-221,,Basic Electrical Engineering,EIE1N2, ,2.1.2
+31-407-030-222,,Basic Electrical Engineering Laboratory,EIE1N2, ,2.1.2
+31-407-050-101,,Basic Engineering Training,EIE1N2, ,2.1.2
+31-407-051-203,,Metrology Engineering Laboratory,EIE1N2, ,2.2.1
+00-000-011-001,,Social Dynamics and Happy Living,EIE1N1, ,1.1
+00-000-022-001,,Human Value : Arts and Sciences in Daily Living,EIE1N1, ,1.2
+00-000-031-101,,English for Study Skills Development,EIE1N1, ,1.3
+02-005-030-101,,Physics 1,EIE1N1, ,2.1.1
+02-005-030-102,,Physics Laboratory 1,EIE1N1, ,2.1.1
+31-407-030-221,,Basic Electrical Engineering,EIE1N1, ,2.1.2
+31-407-030-222,,Basic Electrical Engineering Laboratory,EIE1N1, ,2.1.2
+31-407-050-101,,Basic Engineering Training,EIE1N1, ,2.1.2
+31-407-051-203,,Metrology Engineering Laboratory,EIE1N1, ,2.2.1
+31-407-092-401,,Cooperative Education for Post-Harvest and Processing Engineering,EPE4N, ,2.3.1
+04-091-204,,Post-Harvest Engineering and Processing Engineering Projects 2,EPE4N, ,2.2.2
+04-091-307,,Agricultural and Food Equipment,EPE4N, ,2.2.2
+04-091-302,,Power Systems in Food Industry,EPE4N, ,2.2.1
+04-091-301,,Combustion Technology for Food Engineering,EPE4N, ,2.2.1
+31-407-031-302,,Machine Design,EPE3N, ,2.2.1
+31-407-035-310,,Heat and Mass Transfer,EPE3N, ,2.2.1
+03-407-091-202,,Fundamentals Biochemistry and Microbiology for Agriculture and Food Industry,EPE3N, ,2.2.2
+31407-091-201,,Post-Harvest and Processing Engineering Laboratory,EPE3N, ,2.2.2
+31407-091-204,,Post-Harvest Engineering and Technology of Agricultural Products,EPE3N, ,2.2.2
+03-407-075-302,,Refrigeration,EPE3N, ,
+31-407-091-305,,Quality Control of Agriculture and Food Industry,EPE3N, ,2.2.2
+31-407-092-301,,Computer Aided Engineering for Post-Harvest and Processing Engineering,EPE3N, ,2.3.2
+00-000-022-001,,Human Value : Arts and Sciences in Daily Living,EPE2N, ,1.2
+00-000-031-203,,English Reading for Academic Purposes,EPE2N, ,1.3
+00-000-041-002,,Science and Modern Technology,EPE2N, ,1.4
+02-005-011-211,,Calculus 3 for Engineers,EPE2N, ,2.2.1
+31-407-070-102,,Engineering Mechanics,EPE2N, ,2.2.2
+31-407-070-203,,Thermodynamics,EPE2N, ,2.2.2
+31-407-420-201,,Modern Technology in Food Industry,EPE2N, ,2.2.2
+00-000-011-001,,Social Dynamics and Happy Living,EPE1N, ,1.1
+00-000-031-101,,English for Study Skills Development,EPE1N, ,1.3
+00-000-032-101,,Thai for Communication,EPE1N, ,1.3
+02-005-011-109,,Calculus 1 for Engineers,EPE1N, ,2.2.1
+02-005-020-105,,Fundamentals of Chemistry,EPE1N, ,2.2.1
+02-005-020-106,,Fundamentals of Chemistry Laboratory,EPE1N, ,2.2.1
+02-005-030-101,,Physics 1,EPE1N, ,2.2.1
+02-005-030-102,,Physics Laboratory 1,EPE1N, ,2.2.1
+31-407-461-207,,Sugarcane and Sugar Production Process,EMS4R, ,2.2
+31-407-463-201,,Pneumatics and Hydraulics in Sugarcane and Sugar Industry,EMS4R, ,2.4
+31-407-463-202,,Practice on Pneumatics and Hydraulics in Sugarcane and Sugar Industry,EMS4R, ,2.4
+31-407-463-203,,Tractor Engineering for Modern Farm,EMS4R, ,2.4
+31-407-463-204,,Practice on Tractor Engineering for Modern Farm,EMS4R, ,2.4
+31-407-463-205,,Agricultural Machinery Engineering,EMS4R, ,2.4
+31-407-463-206,,Practice on Agricultural Machinery Engineering,EMS4R, ,2.4
+31-407-463-214,,Pre-Project on Modern Technology of Sugarcane and Sugar Industry,EMS4R, ,2.4
+31-407-462-203,,Unmanned Aerial Vehicle and Image Processing in Sugarcane and Sugar Industry,EMS4R, ,2.3
+31-407-462-204,,Practice on Unmanned Aerial Vehicle and Image Processing in Sugarcane and Sugar Industry,EMS4R, ,2.3
+31-407-463-209,,Maintenance of Agricultural Machinery in Sugarcane and Sugar Industry,EMS4R, ,2.4
+31-407-463-210,,Practice on Maintenance of Agricultural Machinery in Sugarcane and Sugar Industry,EMS4R, ,2.4
+00-000-011-001,,Social Dynamics and Happy Living,EMS3R, ,1.1
+00-000-031-101,,English for Study Skills Development,EMS3R, ,1.3
+31-407-460-101,,Applied Mathematics,EMS3R, ,2.1
+31-407-460-102,,Engineering Drawing,EMS3R, ,2.1
+31-407-460-103,,Practice on Engineering Drawing,EMS3R, ,2.1
+31-407-460-104,,Engineering Mechanics,EMS3R, ,2.1
+31-407-460-105,,Computer Programming,EMS3R, ,2.1
+31-407-460-106,,Practice on Computer Programming,EMS3R, ,2.1
+31-407-462-208,,Supply Chain Management and Logistics in Sugarcane and Sugar Industry,EMS3R, ,3
+31-407-084-403,,Cooperative Education for Agricultural Machinery,EAE4R, ,2.2
+31-407-071-302,,Computer Aided Mechanical Engineering Design,EAE4R, ,2.2
+31-407-082-306,,Smart Agricultural Tractor,EAE4R, ,2.2
+31-407-071-201,,Mechanics of Machinery,EAE4R, ,2.2
+00-000-031-205,,English Writing for Daily Life,EAE3R, ,1.3
+02-005-011-211,,Calculus 3 for Engineers,EAE3R, ,2.1.1
+02-005-020-105,,Fundamental of Chemistry,EAE3R, ,2.1.1
+02-005-020-106,,Fundamental of Chemistry Laboratory,EAE3R, ,2.1.1
+31-407-050-103,,Manufacturing Processes,EAE3R, ,2.1.2
+31-407-070-205,,Mechanics of Materials,EAE3R, ,2.1.2
+31-407-071-201,,Heat Transfer,EAE3R, ,2.2.1
+00-000-031-101,,English for Study Skills Development,EAE2R, ,1.3
+02-005-011-109,,Calculus 1 for Engineers,EAE2R, ,2.1
+02-005-030-101,,Physics 1,EAE2R, ,2.1
+02-005-030-102,,Physics Laboratory 1,EAE2R, ,2.1
+31-407-100-101,,Computer Programming,EAE2R, ,2.1
+03-407-050-102,,Engineering Drawing,EAE2R, ,2.1
+31-407-120-101,,Engineering Materials,EAE2R, ,2.1
+03-407-071-411,,Refrigeration,EAE4N, ,2.2
+03-407-071-308,,Pre-Cooperative Education for Engineering,EAE4N, ,2.2
+03-407-071-408,,Power Plant Engineering,EAE4N, ,2.2
+03-407-071-409,,Mechanical Vibration,EAE4N, ,2.2
+03-407-071-410,,Automatic Control,EAE4N, ,2.2
+03-407-081-405,,Agricultural Machinery Engineering Project,EAE4N, ,2.2
+03-407-082-411,,Repair and Maintenance Engineering in Agricultural Industry,EAE4N, ,3
+03-407-082-308,,Agricultural Power,EAE4N, ,3
+03-407-083-404,,Material Handling Engineering,EAE4N, ,3
+04-030-204,,Engineering Dynamics,EAE4N, ,2.2
+00-000-012-001,,Life and Social Quality Development,EAE3N, ,1.1
+31-407-082-304,,Automatic Greenhouse Conrol System,EAE3N, ,2.2
+31-407-071-304,,Machine Design,EAE3N, ,2.2
+31-407-080-303,,Fundamentals of Mechanical Engineering,EAE3N, ,2.2
+31-407-082-301,,Pneumatics and Hydraulics for Agricultural Engineering,EAE3N, ,2.2
+31-407-083-401,,Agricultural Process Engineering,EAE3N, ,2.2
+31-407-083-303,,Renewable Energy for Smart Agriculture ,EAE3N, ,3
+00-000-031-204,,English Conversation for Daily Life,EAE2N, ,1.3
+02-005-011-211,,Calculus 3 for Engineers,EAE2N, ,2.1.1
+31-407-070-101,,Basic Training in Mechanical Engineering,EAE2N, ,2.1.2
+31-407-070-102,,Engineering Mechanics,EAE2N, ,2.1.2
+31-407-070-203,,Thermodynamics,EAE2N, ,2.1.2
+31-407-070-204,,Fluid Mechanics,EAE2N, ,2.1.2
+00-000-011-001,,Social Dynamics and Happy Living,EAE1N, ,1.1
+00-000-031-101,,English for Study Skills Development,EAE1N, ,1.3
+00-000-032-101,,Thai for Communication,EAE1N, ,1.3
+02-005-011-109,,Calculus 1 for Engineers,EAE1N, ,2.1.1
+02-005-020-105,,Fundamental of Chemistry,EAE1N, ,2.1.1
+02-005-020-106,,Fundamental of Chemistry Laboratory,EAE1N, ,2.1.1
+02-005-030-101,,Physics 1,EAE1N, ,2.1.1
+02-005-030-102,,Physics Laboratory 1,EAE1N, ,2.1.1
+31-407-071-305,,Cooperative Education for Mechanical Engineering,EME4Q, ,2.2
+31-407-071-409,,Mechanical Engineering Project,EME4Q, ,2.2
+31-407-071-305,,Cooperative Education for Mechanical Engineering,EME4R, ,2.2
+31-407-071-409,,Mechanical Engineering Project,EME4R, ,2.2
+00-000-031-204,,English Conversation for Daily Life,EME3Q, ,1.3
+00-005-011-211,,Calculus 3 for Engineers,EME3Q, ,2.1.1
+00-005-020-105,,Fundamental of Chemistry,EME3Q, ,2.1.1
+00-005-020-105,,Fundamental of Chemistry Laboratory,EME3Q, ,2.1.1
+31-407-050-103,,Manufacturing Processes,EME3Q, ,2.1.2
+31-407-070-205,,Mechanics of Materials,EME3Q, ,2.1.2
+31-407-071-201,,Heat Transfer,EME3Q, ,2.2.1
+00-000-031-204,,English Conversation for Daily Life,EME3R, ,1.3
+00-005-011-211,,Calculus 3 for Engineers,EME3R, ,2.1.1
+00-005-020-105,,Fundamental of Chemistry,EME3R, ,2.1.1
+00-005-020-105,,Fundamental of Chemistry Laboratory,EME3R, ,2.1.1
+31-407-050-103,,Manufacturing Processes,EME3R, ,2.1.2
+31-407-070-205,,Mechanics of Materials,EME3R, ,2.1.2
+31-407-071-201,,Heat Transfer,EME3R, ,2.2.1
+00-000-031-101,,English for Study Skills Development,EME2Q, ,1.3
+02-005-011-109,,Calculus 1 for Engineers,EME2Q, ,2.1.1
+02-005-030-101,,Physics 1,EME2Q, ,2.1.1
+02-005-030-102,,Physics Laboratory 1,EME2Q, ,2.1.1
+31-407-050-102,,Engineering Drawing,EME2Q, ,2.1.2
+31-407-073-020,,Millwright Skills Workshop,EME2Q, ,2.3
+31-407-100-101,,Computer Programming,EME2Q, ,2.1.2
+31-407-120-101,,Engineering Materials,EME2Q, ,2.1.2
+00-000-031-101,,English for Study Skills Development,EME2R, ,1.3
+02-005-011-109,,Calculus 1 for Engineers,EME2R, ,2.1.1
+02-005-030-101,,Physics 1,EME2R, ,2.1.1
+02-005-030-102,,Physics Laboratory 1,EME2R, ,2.1.1
+31-407-050-102,,Engineering Drawing,EME2R, ,2.1.2
+31-407-073-020,,Millwright Skills Workshop,EME2R, ,2.3
+31-407-100-101,,Computer Programming,EME2R, ,2.1.2
+31-407-120-101,,Engineering Materials,EME2R, ,2.1.2
+00-000-041-005,,Entrepreneurship in Science and Technology,EME4NR, ,1.4
+31-407-071-406,,Automatic Control,EME4NR, ,2.2.1
+31-407-071-407,,Mechanical Vibration,EME4NR, ,2.2.1
+31-407-071-408,,Mechanical Engineering Project Seminar,EME4NR, ,2.2.1
+31-407-074-403,,Friction and Wear,EME4NR, ,2.2.2
+31-407-074-404,,Railway Engineering Laboratory 2,EME4NR, ,2.2.2
+31-407-075-009,,Structure and design of locomotives,EME4NR, ,2.3
+00-000-031-205,,English Writing for Daily Life,EME3NR, ,1.3
+31-407-071-302,,Computer Aided Design for Mechanical Engineering,EME3NR, ,2.2.1
+31-407-071-303,,Mechanics of Machinery,EME3NR, ,2.2.1
+31-407-071-304,,Machine Design,EME3NR, ,2.2.1
+31-407-074-302,,Railway Engineering Laboratory 1,EME3NR, ,2.2.2
+31-407-075-006,,Railway Braking System,EME3NR, ,2.3
+31-407-075-007,,Air conditioning in Railway Vehicles,EME3NR, ,2.3
+00-000-031-203,,English Reading for Academic Purposes,EME2NR, ,1.3
+02-005-011-211,,Calculus 3 for Engineers,EME2NR, ,2.1.1
+31-407-070-202,,Thermodynamics,EME2NR, ,2.1.2
+31-407-070-203,,Fluid Mechanics,EME2NR, ,2.1.2
+31-407-075-002,,Railway Electrification System,EME2NR, ,2.3.2
+31-407-075-008,,Fundamentals of Railway Vehicle Dynamics,EME2NR, ,2.3.2
+31-407-073-001,,Internal to Raiway System Engineering,EME2NR, ,2.3.2
+00-000-012-001,,Life and Social Quality Development,EME1NR, ,1.1
+00-000-031-101,,English for Study Skills Development,EME1NR, ,1.3
+00-000-032-101,,Thai for Communication,EME1NR, ,1.3
+02-005-011-109,,Calculus 1 for Engineers,EME1NR, ,2.1.1
+02-005-020-105,,Fundamentals of Chemistry,EME1NR, ,2.1.1
+02-005-020-106,,Fundamentals of Chemistry Laboratory,EME1NR, ,2.1.1
+02-005-030-101,,Physics 1,EME1NR, ,2.1.1
+02-005-030-102,,Physics Laboratory 1,EME1NR, ,2.1.1
+00-000-041-005,,Entrepreneurship in Science and Technology,EME4NM, ,1.4
+31-407-071-406,,Automatic Control,EME4NM, ,2.2.1
+31-407-071-407,,Mechanical Vibration,EME4NM, ,2.2.1
+31-407-071-408,,Mechanical Engineering Project Seminar,EME4NM, ,2.2.1
+31-407-072-403,,Power Plant Engineering,EME4NM, ,2.2.2
+31-407-072-404,,Mechanical Engineering Laboratory 2,EME4NM, ,2.2.2
+31-407-073-001,,Internal Combustion Engines,EME4NM, ,2.3
+00-000-031-205,,English Writing for Daily Life,EME3NM, ,1.3
+31-407-071-302,,Computer Aided Design for Mechanical Engineering,EME3NM, ,2.2.1
+31-407-071-303,,Mechanics of Machinery,EME3NM, ,2.2.1
+31-407-071-304,,Machine Design,EME3NM, ,2.2.1
+31-407-072-301,,Refrigeration and Air Conditioning,EME3NM, ,2.2.2
+31-407-072-302,,Mechanical Engineering Laboratory 1,EME3NM, ,2.2.2
+31-407-073-011,,Industrial Pneumatics and Hydraulics,EME3NM, ,2.3
+00-000-031-203,,English Reading for Academic Purposes,EME2NM, ,1.3
+02-005-011-211,,Calculus 3 for Engineers,EME2NM, ,2.1.1
+31-407-070-202,,Thermodynamics,EME2NM, ,2.1.2
+31-407-070-203,,Fluid Mechanics,EME2NM, ,2.1.2
+31-407-073-016,,Engines Diagnosis,EME2NM, ,2.3.1
+31-407-032-201,,Fundamentals of Electrical Engineering,EME2NM, ,2.3.1
+31-407-073-020,,Millwright Skills Workshop,EME2NM, ,2.3.1
+00-000-012-001,,Life and Social Quality Development,EME1NM, ,1.1
+00-000-031-101,,English for Study Skills Development,EME1NM, ,1.3
+00-000-032-101,,Thai for Communication,EME1NM, ,1.3
+02-005-011-109,,Calculus 1 for Engineers,EME1NM, ,2.1.1
+02-005-020-105,,Fundamentals of Chemistry,EME1NM, ,2.1.1
+02-005-020-106,,Fundamentals of Chemistry Laboratory,EME1NM, ,2.1.1
+02-005-030-101,,Physics 1,EME1NM, ,2.1.1
+02-005-030-102,,Physics Laboratory 1,EME1NM, ,2.1.1
+00-000-031-203,,English Reading for Academic Purposes,ECP4R, ,1.3
+02-005-020-105,,Fundamentals of Chemistry,ECP4R, ,2.1
+02-005-020-106,,Fundamentals of Chemistry Laboratory,ECP4R, ,2.1
+03-407-101-210,,Computer Architecture and Organization 2,ECP4R, ,2.2
+03-407-101-303,,Database System,ECP4R, ,2.2
+03-407-101-304,,Database System Laboratory,ECP4R, ,2.2
+03-407-101-305,,Computer Network,ECP4R, ,2.2
+03-407-101-306,,Computer Network Laboratory,ECP4R, ,2.2
+03-407-101-310,,Computer Engineering Project 1,ECP4R, ,2.2
+31-407-103-301,,Computer Network,ECP3R, ,2.2.1
+03-407-101-202,,Discrete Mathematics for Engineering,ECP3R, ,2.2.1
+03-407-102-201,,Object-Oriented Programming,ECP3R, ,2.2.1
+31-407-104-301,,Computer Architecture and Organization,ECP3R, ,2.2.1
+31-407-104-202,,Digital System Design,ECP3R, ,2.2.1
+31-407-102-301,,Databass System,ECP3R, ,2.2.1
+02-005-011-109,,Calculus 1 for Engineers,ECP2R, ,2.1
+02-005-030-101,,Physics 1,ECP2R, ,2.1
+02-005-030-102,,Physics Laboratory 1,ECP2R, ,2.1
+31-407-100-102,,Fundamental Computer Engineering,ECP2R, ,2.1
+03-407-101-101,,Electronic Devices for Computer Engineering,ECP2R, ,2.2
+03-407-101-102,,Electronic Devices for Computer Engineering Laboratory,ECP2R, ,2.2
+03-407-050-201,,Electric Circuits,ECP2R, ,2.1
+31-407-104-201,,Digital and Logic Circuits,ECP2R, ,2.2
+31-407-108-401,,Cooperative Education for Computer,ECP4N, ,2.2
+04-061-201,,Statistics for Computer Engineering,ECP4N, ,2.1
+04-061-401,,Software Engineering ,ECP4N, ,2.2
+04-061-404,,Computer Engineering Project 2,ECP4N, ,2.2
+00-000-041-002,,Science and Modern Technology,ECP3N, ,1.4
+03-407-101-210,,Computer Architecture and Organization 2,ECP3N, ,2.2
+03-407-101-301,,Digital System Design,ECP3N, ,2.2
+03-407-101-302,,Digital System Design Laboratory,ECP3N, ,2.2
+03-407-101-303,,Database System,ECP3N, ,2.2
+03-407-101-304,,Database System Laboratory,ECP3N, ,2.2
+03-407-101-305,,Computer Network,ECP3N, ,2.2
+03-407-101-306,,Computer Network Laboratory,ECP3N, ,2.2
+03-407-101-307,,Microcontroller,ECP3N, ,2.2
+03-407-101-308,,Microcontroller Laboratory,ECP3N, ,2.2
+31-407-103-202,,Data Commication,ECP2N, ,2.2
+31-407-104-202,,Digital System Design,ECP2N, ,2.2
+03-407-101-202,,Discrete Mathematics for Engineering,ECP2N, ,2.2
+31-407-100-104,,Basic Computer Engineering Practice,ECP2N, ,2.2
+03-407-102-201,,Object-Oriented Programming,ECP2N, ,2.2
+00-000-031-101,,Engineering for Study Skills Development,ECP2N, ,1.3
+00-000-031-101,,English for Study Skills Development,ECP1N, ,1.3
+00-000-032-101,,Thai for Communication,ECP1N, ,1.3
+02-005-011-109,,Calculus 1 for Engineers,ECP1N, ,2.1
+02-005-030-101,,Physics 1,ECP1N, ,2.1
+02-005-030-102,,Physics Laboratory 1,ECP1N, ,2.1
+31-407-100-102,,Fundamental Computer Engineering,ECP1N, ,2.1
+03-407-050-201,,Electric Circuits,ECP1N, ,2.1
+03-407-101-101,,Electronic Devices for Computer Engineering,ECP1N, ,2.2
+03-407-101-102,,Electronic Devices for Computer Engineering Laboratory,ECP1N, ,2.2
+31-407-361-401,,Practice on Smart Electronics Engineering 1,ENS4R, ,2.2
+31-407-361-402,,Practice on Smart Electronics Engineering 2,ENS4R, ,2.2
+31-407-361-403,,Practice on Smart Electronics Engineering 3,ENS4R, ,2.2
+31-407-361-404,,Practice on Smart Electronics Engineering 4,ENS4R, ,2.2
+31-407-361-409,,Smart Electronics Engineering Project 1,ENS4R, ,2.2
+00-000-011-001,,Social Dynamics and Happy Living,, ,1.1
+00-000-031-101,,English for Study Skills Development,ENS3R, ,1.3
+31-407-360-301,,Applied Computation for Smart Electronics Engineering,ENS3R, ,2.1
+31-407-360-302,,Applied Science for Smart Electronics Engineering,ENS3R, ,2.1
+31-407-361-301,,Electronic Circuits Design and PCB Fabrication,ENS3R, ,2.2
+31-407-361-302,,Electronic Circuits Design and PCB Fabrication Laboratory,ENS3R, ,2.2
+31-407-361-303,,Power Electronics and Motor Drive Circuit for Electrical Vehicle,ENS3R, ,2.2
+31-407-362-301,,Mixed Signal Integrated Circuit Design using CMOS Technology,ENS3R, ,3
+03-407-041-418,,Cooperative Education for Electronics and Telecommunication Engineering,ENE4R2, ,2.3
+03-407-041-418,,Cooperative Education for Electronics and Telecommunication Engineering,ENE4R1, ,2.3
+03-407-042-420,,Applied Engineering Mathematics,ENE4R1, ,2.2
+00-000-031-205,,English Conversation for Daily Life,ENT3R, ,1.3
+02-005-011-211,,Calculus 3 for Engineers,ENT3R, ,2.1
+31-407-450-301,,Control Systems,ENT3R, ,2.1
+03-407-042-306,,Digital Circuits and Logic Design,ENT3R, ,2.3
+03-407-042-307,,Digital Circuits Laboratory,ENT3R, ,2.3
+03-407-041-207,,Electromagnetic Fields,ENT3R, ,2.2
+03-407-041-208,,Principle of Communication Systems,ENT3R, ,2.2
+03-407-042-201,,Communication Systems Laboratory,ENT3R, ,2.3
+00-000-031-102,,English for Communication,ENT2R, ,1.3
+02-005-011-109,,Calculus 1 for Engineers,ENT2R, ,2.1
+00-000-011-001,,Social Dynamics and Happy Living,ENT2R, ,1.1
+31-407-120-101,,Engineeringin Materials,ENT2R, ,2.1
+02-005-030-101,,Physics 1,ENT2R, ,2.1
+02-005-030-102,,Physics Laboratory 1,ENT2R, ,2.1
+03-407-050-102,,Engineering Drawing,ENT2R, ,2.1
+03-407-100-101,,Computer Programming,ENT2R, ,2.1
+03-407-041-205,,Optical Communication,ENE4N, ,2.2
+03-407-041-206,,Optical Communication Laboratory,ENE4N, ,2.2
+03-407-041-211,,Microwave Engineering,ENE4N, ,2.2
+03-407-041-308,,Pre-Cooperative Education for Engineering,ENE4N, ,2.2
+03-407-041-312,,Antenna Engineering,ENE4N, ,2.2
+03-407-041-313,,Antenna Engineering Laboratory,ENE4N, ,2.2
+03-407-041-417,,Electronics and Telecommunication Project,ENE4N, ,2.2
+03-407-042-417,,Microwave Engineering Laboratory,ENE4N, ,2.3
+03-407-042-418,,Radio Wave Propagation,ENE4N, ,3.
+02-030-104,,Physics Laboratory 1,ENE4N, ,2.1
+03-407-041-204,,Digital Communication,ENE3N, ,2.2
+03-407-041-209,,Communication Networks and Transmission Lines,ENE3N, ,2.2
+03-407-041-210,,Data Communications and Network,ENE3N, ,2.2
+03-407-041-314,,Principle Electrical Measurements and Instrumentation,ENE3N, ,2.2
+03-407-041-315,,Feedback Control Systems,ENE3N, ,2.2
+03-407-042-414,,Microprocessor,ENE3N, ,2.3
+03-407-042-415,,Microprocessor Laboratory,ENE3N, ,2.3
+03-407-042-302,,Electromagnetic Waves,ENE3N, ,3.

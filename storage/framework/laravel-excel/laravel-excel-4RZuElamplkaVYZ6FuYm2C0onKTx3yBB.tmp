@@ -1,0 +1,141 @@
+﻿รหัสวิชา,ชื่อวิชา (ภาษาไทย),ชื่อวิชา (ภาษาอังกฤษ),กลุ่มเรียน,หน่วยกิต,สภาพวิชา
+00-000-041-001,,Life and Environment,EIE3Q,,1.4
+02-005-011-211,,Calculus 3 for Engineers,EIE3Q,,2.1.1
+31-407-051-204,,Safety Engineering,EIE3Q,,2.2.1
+31-407-051-206,,Industrial Work Study,EIE3Q,,2.2.1
+31-407-070-102,,Engineering Mechanics,EIE3Q,,2.1.2
+31-407-073-019,,Basic Mechanical Engineering Laboratory,EIE3Q,,2.1.2
+31-407-053-201,,Tool Engineering,EIE3Q,,2.2
+31-407-056-002,,Computer Aided Design and Manufacturing,EIE3Q,,2.2
+31-407-053-407,,Cooperative Education for Industrial Engineering,EIE4R1,,2.2
+31-407-052-201,,Operations Research,EIE4R2,,2.2.1
+31-407-053-406,,Production Engineering Project,EIE4R3,,2.2.2
+31-407-053-407,,Cooperative Education for Industrial Engineering,EIE4Q,,2.2
+31-407-387-309,,Fundamental Chemistry of Dairy and Beverage,EMM3R,,2.2.3
+31-407-387-316,,Practice on Fundamental Processing of Dairy and Beverage,EMM3R,,2.2.3
+31-407-387-311,,Fundamental Microbiology of Dairy and Beverage,EMM3R,,2.2.3
+31-407-387-312,,Practice on Fundamental Microbiology of Dairy and Beverage,EMM3R,,2.2.3
+31-407-387-313,,Equipment and Unit Operation for Dairy and Beverage Processing,EMM3R,,2.2.3
+31-407-387-314,,Practice on Equipment and Unit Operation for Dairy and Beverage Processing,EMM3R,,2.2.3
+31-407-387-317,,Utility Engineering for Dairy and Beverages Processing,EMM3R,,2.2.3
+31-407-387-424,,Dairy and Beverage Engineering Pre-Project,EMM3R,,2.2.3
+00-000-011-001,,Social Dynamics and Happy Living,EMT1N,,1.1
+00-000-021-002,,Knowledge Management,EMT1N,,1.2
+00-000-042-001,,Mathematics and Statistics for Daily Life,EMT1N,,1.4
+02-405-011-109,,Calculus 1 for Engineers,EMT1N,,2.1
+02-405-020-105,,Fundamentals of Chemistry,EMT1N,,2.1
+02-405-020-106,,Fundamentals of Chemistry Laboratory,EMT1N,,2.1
+31-407-050-102,,Engineering Drawing,EMT1N,,2.1
+00-000-041-001,,Life and Environment,EMT2N,,1.4
+02-405-011-110,,Calculus 2 for Engineers,EMT2N,,2.1
+31-407-070-204,,Engineering Mechanics,EMT2N,,2.1
+31-407-051-101,,Machine Tool Practice,EMT2N,,2.2
+31-407-121-102,,Metallurgy of Metals Joining,EMT2N,,2.2
+31-407-121-202,,Ferrous and Non Ferrous Metals,EMT2N,,2.2
+31-407-121-203,,Foundry Engineering 1,EMT2N,,2.2
+31-407-030-203,,Electrical Engineering Technology,EMT3N,,2.1
+31-407-030-204,,Electrical Engineering Technology Laboratory,EMT3N,,2.1
+31-407-050-104,,Engineering Statistics,EMT3N,,2.2
+31-407-121-101,,Metal Forming,EMT3N,,2.2
+31-407-121-301,,Thermal Treatment of Metals,EMT3N,,2.2
+31-407-123-201,,Welding Engineering 1,EMT3N,,2.3
+31-407-122-301,,Foundry Engineering 2,EMT3N,,2.3
+31-407-122-302,,Pattern Design and Marking in Casting,EMT3N,,2.3
+31-407-121-401,,Cooperative Education for Metallurgical,EMT4N,,2.2
+00-000-011-001,,Social Dynamics and Happy Living,SCH2N,,1.1
+00-000-034-001,,Chinese Conversation for Daily Life,SCH2N,,1.3
+00-000-032-101,,Thai for Communication,SCH2N,,1.3
+02-005-011-104,,Calculus 1,SCH2N,,2.1
+02-005-020-101,,General Chemistry 1,SCH2N,,2.1
+02-005-020-102,,General Chemistry Laboratory 1,SCH2N,,2.1
+02-005-030-101,,Physics 1,SCH2N,,2.1
+02-005-030-102,,Physics Laboratory 1,SCH2N,,2.1
+00-000-023-001,,Sport and Recreation for Health,SCH2N,,1.2
+02-005-040-102,,Biology,SCH2N,,2.1
+02-005-040-103,,Biology Laboratory,SCH2N,,2.1
+02-005-050-204,,Statistic 1,SCH2N,,2.1
+31-405-021-201,,Inorganic Chemistry 1,SCH2N,,2.2.1
+31-405-021-202,,Inorganic Chemistry Laboratory 1,SCH2N,,2.2.1
+31-405-022-201,,Organic Chemistry 1,SCH2N,,2.2.1
+31-405-022-202,,Organic Chemistry Laboratory 1,SCH2N,,2.2.1
+31-405-027-201,,Chemicals and Safety,SCH2N,,2.2.1
+02-405-021-301,,Inorganic Chemistry 1,SCH3N,,2.2
+02-405-021-302,,Inorganic Chemistry Laboratory 1,SCH3N,,2.2
+02-405-023-301,,Biochemistry,SCH3N,,2.2
+02-405-023-302,,Biochemistry Laboratory,SCH3N,,2.2
+02-405-025-305,,Separation Techniques,SCH3N,,2.2
+02-405-025-306,,Separation Techniques Laboratory,SCH3N,,2.2
+02-405-027-302,,Chemical and Safety,SCH3N,,2.2
+02-005-050-204,,Statistics 1,SCH3N,,2.1
+00-000-022-001,,Human Value:Arts and Sciences in Daily Living,SCH3N,,1.2
+02-405-027-305,,Catalytic Chemistry,SCH4N,,2.3
+02-405-026-301,,Chemical Process Industries,SCH4N,,2.3
+02-405-028-301,,Seminar,SCH4N,,2.2
+02-405-026-304,,Polymer Technology,SCH4N,,3.
+02-405-025-310,,Selected Topics in Chemistry,SCH4N,,3.
+00-000-011-001,,Social Dynamics and Happy Living,MIP1N,,1.1
+00-000-031-101,,English for Study Skills Development,MIP1N,,1.3
+00-000-032-101,,Thai for Communication,MIP1N,,1.3
+02-005-020-101,,General Chemistry 1,MIP1N,,2.1
+02-005-020-102,,General Chemistry Laboratory 1,MIP1N,,2.1
+31-405-160-101,,General Physics 1,MIP1N,,2.1
+31-405-160-102,,General Physics Laboratory 1,MIP1N,,2.1
+31-405-160-103,,Fundamentals of Mathematics 1,MIP1N,,2.1
+00-000-041-001,,Life and Environment,EIE3Q,,1.4
+02-005-011-211,,Calculus 3 for Engineers,EIE3Q,,2.1.1
+31-407-051-204,,Safety Engineering,EIE3Q,,2.2.1
+31-407-051-206,,Industrial Work Study,EIE3Q,,2.2.1
+31-407-070-102,,Engineering Mechanics,EIE3Q,,2.1.2
+31-407-073-019,,Basic Mechanical Engineering Laboratory,EIE3Q,,2.1.2
+31-407-053-201,,Tool Engineering,EIE3Q,,2.2
+31-407-056-002,,Computer Aided Design and Manufacturing,EIE3Q,,2.2
+00-000-041-001,,Life and Environment,EIE3R,,1.4
+02-005-011-211,,Calculus 3 for Engineers,EIE3R,,2.1.1
+31-407-051-204,,Safety Engineering,EIE3R,,2.2.1
+31-407-051-206,,Industrial Work Study,EIE3R,,2.2.1
+31-407-070-102,,Engineering Mechanics,EIE3R,,2.1.2
+31-407-073-019,,Basic Mechanical Engineering Laboratory,EIE3R,,2.1.2
+31-407-053-201,,Tool Engineering,EIE3R,,2.2
+31-407-056-002,,Computer Aided Design and Manufacturing,EIE3R,,2.2
+00-000-031-101,,English for Study Skills Development,EIE2Q,,1.3
+00-000-042-001,,Mathematics and Statistics for Daily Life,EIE2Q,,1.4
+02-005-011-109,,Calculus 1 for Engineers,EIE2Q,,2.1.1
+02-005-030-101,,Physics 1,EIE2Q,,2.1.1
+02-005-030-102,,Physics Laboratory 1,EIE2Q,,2.1.1
+31-407-050-102,,Engineering Drawing,EIE2Q,,2.1.2
+31-407-100-101,,Computer Programming,EIE2Q,,2.1.2
+31-407-120-101,,Engineering Materials,EIE2Q,,2.1.2
+00-000-031-101,,English for Study Skills Development,EIE2R,,1.3
+00-000-042-001,,Mathematics and Statistics for Daily Life,EIE2R,,1.4
+02-005-011-109,,Calculus 1 for Engineers,EIE2R,,2.1.1
+02-005-030-101,,Physics 1,EIE2R,,2.1.1
+02-005-030-102,,Physics Laboratory 1,EIE2R,,2.1.1
+31-407-050-102,,Engineering Drawing,EIE2R,,2.1.2
+31-407-100-101,,Computer Programming,EIE2R,,2.1.2
+31-407-120-101,,Engineering Materials,EIE2R,,2.1.2
+00-000-041-002,,Science and Modern Technology,EIE4N,,1.4
+31-407-070-203,,Thermodynamics ,EIE4N,,2.1
+31-407-050-305,,Industrial Engineering Laboratory,EIE4N,,2.2
+31-407-051-310,,Engineering Economy,EIE4N,,2.2
+31-407-053-303,,Automatic and Control System,EIE4N,,2.2
+31-407-053-304,,Forming Process,EIE4N,,2.2
+31-407-056-004,,Automatic Machine,EIE4N,,2.2
+31-407-052-201,,Operations Research,EIE4N,,2.2.1
+31-407-053-305,,Production Engineering Pre-Project,EIE4N,,2.2.1
+31-407-054-007,,Design of Industrial Engineering Experiments,EIE4N,,3.
+00-000-031-205,,English Conversation for Daily Life,EIE3N PE,,1.3
+31-407-051-308,,Production Planning and Control,EIE3N PE,,2.2
+31-407-051-307,,Quality Control,EIE3N PE,,2.2
+31-407-051-309,,Industrial Plant Design,EIE3N PE,,2.2
+31-407-052-202,,Maintenance Engineering,EIE3N PE,,2.2
+31-407-053-305,,Production Engineering Pre-Project,EIE3N PE,,2.2
+31-407-056-010,,Design of Production Engineering Experiments,EIE3N PE,,2.2
+31-407-053-202,,Machine Tool,EIE3N PE,,2.2
+00-000-031-205,,English Conversation for Daily Life,EIE3N IE,,1.3
+31-407-051-308,,Production Planning and Control,EIE3N IE,,2.2
+31-407-051-307,,Quality Control,EIE3N IE,,2.2
+31-407-051-309,,Industrial Plant Design,EIE3N IE,,2.2
+31-407-052-202,,Maintenance Engineering,EIE3N IE,,2.2
+31-407-052-305,,Industrial Engineering Pre-Project,EIE3N IE,,2.2
+31-407-054-007,,Design of Industrial Engineering Experiments,EIE3N IE,,2.2
+31-407-056-004,,Automatic Machine ,EIE3N IE,,2.2
