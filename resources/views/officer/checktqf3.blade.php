@@ -259,7 +259,14 @@
                                     <option value="2">ถูกต้อง</option>
                                     <option value="3">ส่งกลับแก้ไข</option>
                                 </select>
-                                <span style="color: red" id="export-year-empty"></span>
+                                {{-- <span style="color: red" id="export-year-empty"></span> --}}
+                            </div>
+                        </div>
+                        <div class="form-group row" id="status-comment" style="display: none">
+                            <label for="comment3" class="col-sm-4 col-form-label">ความคิดเห็น</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" id="comment3" name="comment" rows="4"></textarea>
+                                {{-- <span style="color: red" id="export-year-empty"></span> --}}
                             </div>
                         </div>
                     </form>
@@ -339,7 +346,17 @@
         var page = 1
         $('#status3').on('show.bs.modal', function(e) {
             var id = $(e.relatedTarget).data('text');
-
+            $('#status-comment').hide();
+            $("textarea").each(function() {
+                // console.log(this.style.height);
+                this.style.height = 60 + 'px';
+            });
+            $('#select-status').change(function(e) {
+                e.preventDefault();
+                if ($(this).val() == 3) {
+                    $('#status-comment').show();
+                }
+            });
             $('#save_status').click(function(e) {
                 if ($('#select-status option:selected').val() == '') {
                     Swal.fire({
@@ -356,7 +373,8 @@
                     url: "update_status3",
                     data: {
                         id: id,
-                        status: $('#select-status option:selected').val()
+                        status: $('#select-status option:selected').val(),
+                        comment: $('#comment3').val(),
                     },
                     dataType: "json",
                     success: function(response) {

@@ -33,7 +33,13 @@
                                 <td style="width: fit-content">
                                     @foreach ($item->subuser as $user)
                                         <p>{{ $user->Uprefix }}{{ $user->UFName }}
-                                            {{ $user->ULName }}</p>
+                                            {{ $user->ULName }}
+                                            @if ($user->userID == $item->teacher)
+                                                <span class="badge bg-primary"
+                                                    style="color: white;">อาจารย์ผู้รับผิดชอบรายวิชา</span>
+                                            @endif
+
+                                        </p>
                                     @endforeach
                                 </td>
                             @else

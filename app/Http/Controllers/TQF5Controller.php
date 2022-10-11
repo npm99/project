@@ -598,7 +598,8 @@ class TQF5Controller extends Controller
                             'subject_idSubject' => $value,
                             'create_date' => date('Y-m-d H:i:s'),
                             'deadline' => $request->date,
-                            'group_sub' => $val
+                            'group_sub' => $val,
+                            'teacher' => $request->teach,
                         );
                         $tqf5 = TQF5::create($data1);
                         // echo $tqf->tqf3ID;
@@ -614,7 +615,8 @@ class TQF5Controller extends Controller
                             'subject_idSubject' => $value,
                             'create_date' => date('Y-m-d H:i:s'),
                             'deadline' => date('Y-m-d', strtotime($request->date . ' - 6 month')),
-                            'group_sub' => $val
+                            'group_sub' => $val,
+                            'teacher' => $request->teach,
                         );
                         $tqf3 = TQF3::create($data2);
                         for ($j = 0; $j < count($request->teacher_id); $j++) {
@@ -624,7 +626,7 @@ class TQF5Controller extends Controller
                             $u_tqf3->save();
                         }
                         TQF5::where('tqf5ID', $tqf5->tqf5ID)->update(['id_tqf3' => $tqf3->tqf3ID]);
-                        TQF3::where('tqf3ID', $tqf3->tqf3ID)->update(['id_tqf5' => $tqf5->tqf5ID]);
+                        TQF3::where('tqf3ID', $tqf3->tqf3ID)->update(['id_tqf5' => $tqf5->tqf5ID, 'teacher' => $request->teach,]);
                     }
                 }
             }
@@ -633,7 +635,7 @@ class TQF5Controller extends Controller
             return response()->json(
                 [
                     'success' => false,
-                    'message' => 'ERROR PHP'
+                    'message' => $e
                 ]
             );
         }
@@ -734,6 +736,7 @@ class TQF5Controller extends Controller
             $tqf5->subject_idSubject = $request->arr_sub;
             $tqf5->update_date = date('Y-m-d H:i:s');
             $tqf5->deadline = $request->date;
+            $tqf5->teacher = $request->teach;
             $tqf5->save();
 
             $tqf3 = TQF3::where('id_tqf5', '=', $request->id_tqf5)->first();
@@ -743,6 +746,7 @@ class TQF5Controller extends Controller
             $tqf3->group_sub = $request->group;
             // $tqf3->user_userID = $request->teacher_id;
             $tqf3->subject_idSubject = $request->arr_sub;
+            $tqf3->teacher = $request->teach;
             $tqf3->update_date = date('Y-m-d H:i:s');
             $tqf3->save();
             for ($j = 0; $j < count($request->teacher_id); $j++) {
@@ -1357,6 +1361,9 @@ class TQF5Controller extends Controller
         $tqf = TQF5::find($request->id);
         if ($tqf->status == 4) {
             $tqf->send_file = 0;
+        }
+        if ($request->status == 3) {
+            $tqf->comment = $request->comment;
         }
         $tqf->status = $request->status;
         $tqf->update_date = date('Y-m-d H:i:s');

@@ -270,15 +270,19 @@
                             <input type="date" name="date" id="date" class="form-control"
                                 value="{{ isset($date->deadline) ? $date->deadline : '' }}">
                         </div>
-                        {{-- <div class="form-group">
-                            <label class="form-control-label">เลือกกลุ่มเรียน</label>
-                            <select name="tqf_group" id="tqf_group" class="form-control selectpicker"
-                                data-live-search="true" title="กรุณาเลือกกลุ่มเรียน">
-                                @foreach ($group as $item)
-                                    <option value="{{ $item->groupID }}">{{ $item->groupname }}</option>
+                        <div class="form-group">
+                            <label class="form-control-label">อาจารย์ผู้รับผิดชอบรายวิชา</label>
+                            <select name="tqf_teacher" id="tqf_teacher" class="form-control selectpicker"
+                                data-live-search="true" title="กรุณาอาจารย์ผู้รับผิดชอบรายวิชา">
+                                @foreach ($teacher as $item)
+                                    <option value="{{ $item->userID }}">
+                                        {{ $item->Uprefix }}{{ $item->UFName }} {{ $item->ULName }}
+                                        &nbsp;&nbsp;{{ isset($item->subfac->branchName) ? $item->subfac->branchName : 'ไม่ระบุ' }}
+                                        {{-- &nbsp;&nbsp;{{ $item->subfac->subBranch->factoryName }} --}}
+                                    </option>
                                 @endforeach
                             </select>
-                        </div> --}}
+                        </div>
                         <div class="form-group d-flex justify-content-between">
                             <h6>อาจารย์ผู้สอน</h6>
                             {{-- <input type="text" id="teacher" name="teacher" class="form-control" --}}
@@ -496,6 +500,20 @@
                             <label class="form-control-label">วันที่สิ้นสุดการส่งมคอ.</label>
                             <input name="dateline" type="date" class="form-control"
                                 value="{{ isset($date->deadline) ? $date->deadline : '' }}">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-control-label">อาจารย์ผู้รับผิดชอบรายวิชา</label>
+                            <select name="tqf_teacher" id="tqf_teacher" class="form-control selectpicker"
+                                data-live-search="true" title="กรุณาอาจารย์ผู้รับผิดชอบรายวิชา">
+                                @foreach ($teacher as $item)
+                                    <option value="{{ $item->userID }}">
+                                        {{ $item->Uprefix }}{{ $item->UFName }} {{ $item->ULName }}
+                                        &nbsp;&nbsp;{{ isset($item->subfac->branchName) ? $item->subfac->branchName : 'ไม่ระบุ' }}
+                                        {{-- &nbsp;&nbsp;{{ $item->subfac->subBranch->factoryName }} --}}
+                                    </option>
+                                @endforeach
+                            </select>
                         </div>
 
                         <div class="form-group">
@@ -972,8 +990,9 @@
                     data: data,
                     //JSON.stringify()
                     success: function(response) {
+                        $('#loader').addClass('hidden');
                         if (response.success) {
-                            $('#loader').addClass('hidden');
+
                             $("input:checkbox[name=row-addtqf]").prop("checked", false);
                             Swal.fire({
                                 title: 'เพิ่มข้อมูลสำเร็จ',

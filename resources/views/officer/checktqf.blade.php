@@ -109,7 +109,12 @@
                                 <td>
                                     @foreach ($item->subuser as $user)
                                         <p> {{ $user->Uprefix }} {{ $user->UFName }}
-                                            {{ $user->ULName }}</p>
+                                            {{ $user->ULName }}
+                                            @if ($user->userID == $item->teacher)
+                                                <span class="badge bg-primary"
+                                                    style="color: white;">อาจารย์ผู้รับผิดชอบรายวิชา</span>
+                                            @endif
+                                        </p>
                                     @endforeach
                                 </td>
                             @else
@@ -267,7 +272,12 @@
                                 <td style="width: fit-content">
                                     @foreach ($item->subuser as $user)
                                         <p> {{ $user->Uprefix }} {{ $user->UFName }}
-                                            {{ $user->ULName }} </p>
+                                            {{ $user->ULName }}
+                                            @if ($user->userID == $item->teacher)
+                                                <span class="badge bg-primary"
+                                                    style="color: white;">อาจารย์ผู้รับผิดชอบรายวิชา</span>
+                                            @endif
+                                        </p>
                                     @endforeach
                                 </td>
                             @else
@@ -301,11 +311,13 @@
                                     @if ($item->send_file == 1)
                                         @foreach (unserialize($item->filetqf5) as $key => $value)
                                             <a class="btn btn-outline-primary btn-sm mb-2" style="font-size: 12px;"
-                                                href="showfile/{{ $value }}" target="_blank">{{ $item->status == 1 ? 'ตรวจสอบไฟล์มคอ.' : 'ดาวน์โหลดไฟล์มคอ.' }}</a><br />
+                                                href="showfile/{{ $value }}"
+                                                target="_blank">{{ $item->status == 1 ? 'ตรวจสอบไฟล์มคอ.' : 'ดาวน์โหลดไฟล์มคอ.' }}</a><br />
                                         @endforeach
                                     @else
                                         <a class="btn btn-outline-primary btn-sm mb-2" style="font-size: 12px;"
-                                            href="filetqf5/{{ $item->tqf5ID }}" target="_blank">{{ $item->status == 1 ? 'ตรวจสอบไฟล์มคอ.' : 'ดาวน์โหลดไฟล์มคอ.' }}</a>
+                                            href="filetqf5/{{ $item->tqf5ID }}"
+                                            target="_blank">{{ $item->status == 1 ? 'ตรวจสอบไฟล์มคอ.' : 'ดาวน์โหลดไฟล์มคอ.' }}</a>
                                     @endif
                                 @endif
 

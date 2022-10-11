@@ -40,7 +40,7 @@ class LoginController extends Controller
         //            return redirect('/logout');
         //            exit();phoemporn.la prasan.ue
         //        }
-        $checkUser = Users::where('Username', 'like', 'kanokluk.tr')->count();
+        $checkUser = Users::where('Username', 'like', $user->uid)->count();
         $fac = Factory::all();
         $level = Level::all();
 
@@ -48,7 +48,7 @@ class LoginController extends Controller
         if ($checkUser > 0) {
 
             // $name = users::all();
-            $users = Users::where('Username', 'like', 'kanokluk.tr')->first();
+            $users = Users::where('Username', 'like', $user->uid)->first();
             session()->put('data', $users);
             //  printf($users);
 

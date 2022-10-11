@@ -169,7 +169,33 @@
                                                     </td>
                                                 @elseif ($item->status == 3)
                                                     <td style="text-align: center;font-size:14px;">
-                                                        <span class="badge bg-danger">ส่งกลับแก้ไข</span>
+                                                        <span class="badge bg-danger mb-1">ส่งกลับแก้ไข</span>
+                                                        <a href="#status{{ $item->tqf3ID }}" data-toggle="modal"
+                                                            class="btn btn-secondary btn-sm"
+                                                            style="font-size: 12px;">ความคิดเห็น</a>
+                                                        <div class="modal fade" id="status{{ $item->tqf3ID }}"
+                                                            tabindex="-1" role="dialog"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            รายละเอียดการแก้ไข</h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="text-left">{{ $item->comment }}</div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">ปิดออก</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </td>
                                                 @elseif ($item->status == 4)
                                                     <td style="text-align: center;font-size:14px;">
@@ -184,9 +210,9 @@
                                                         @if (!($item->send_file == 1 && $item->status == 1))
                                                             <li class="inline-item mb-1">
                                                                 <a href="{{ url('tqf/addtqf3/' . $item->tqf3ID) }}"
-                                                                    class="btn btn-success btn-sm rounded-1" type="button"
-                                                                    data-toggle="tooltip" data-placement="top"
-                                                                    title="บันทึกมคอ.3">
+                                                                    class="btn btn-success btn-sm rounded-1"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="บันทึกมคอ.3">
                                                                     <i class="fa fa-table"></i></a>
                                                             </li>
                                                         @endif {{-- @if ($item->status == 1) disabled="disabled" @endif --}}

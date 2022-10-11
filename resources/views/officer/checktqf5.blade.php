@@ -228,38 +228,45 @@
         </div>
     </div>
     <div class="modal fade" id="status5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">เลือกสถานะ</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group row">
-                            <label for="status3" class="col-sm-4 col-form-label">สถานะ</label>
-                            <div class="col-sm-8">
-                                <select id="select-status" name="status3" class="form-control">
-                                    <option value="" disabled selected>เลือกข้อมูล...</option>
-                                    <!--<option value="1"></option>-->
-                                    <option value="2">ถูกต้อง</option>
-                                    <option value="3">ส่งกลับแก้ไข</option>
-                                </select>
-                                <span style="color: red" id="export-year-empty"></span>
-                            </div>
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">เลือกสถานะ</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="status5" class="col-sm-4 col-form-label">สถานะ</label>
+                        <div class="col-sm-8">
+                            <select id="select-status" name="status5" class="form-control">
+                                <option value="" selected disabled>เลือกข้อมูล...</option>
+                                <!--<option value="1"></option>-->
+                                <option value="2">ถูกต้อง</option>
+                                <option value="3">ส่งกลับแก้ไข</option>
+                            </select>
+                            {{-- <span style="color: red" id="export-year-empty"></span> --}}
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="save_status">บันทึก</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิดออก</button>
-                </div>
+                    </div>
+                    <div class="form-group row" id="status-comment" style="display: none">
+                        <label for="comment5" class="col-sm-4 col-form-label">ความคิดเห็น</label>
+                        <div class="col-sm-8">
+                            <textarea class="form-control" id="comment5" name="comment" rows="4"></textarea>
+                            {{-- <span style="color: red" id="export-year-empty"></span> --}}
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="save_status">บันทึก</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิดออก</button>
             </div>
         </div>
     </div>
+</div>
 
 @endsection
 @section('script')
@@ -313,6 +320,17 @@
         var page = 1
         $('#status5').on('show.bs.modal', function(e) {
             var id = $(e.relatedTarget).data('text');
+            $('#status-comment').hide();
+            $("textarea").each(function() {
+                // console.log(this.style.height);
+                this.style.height = 60 + 'px';
+            });
+            $('#select-status').change(function(e) {
+                e.preventDefault();
+                if ($(this).val() == 3) {
+                    $('#status-comment').show();
+                }
+            });
             $('#save_status').click(function(e) {
                 if ($('#select-status option:selected').val() == '') {
                     Swal.fire({
@@ -329,13 +347,12 @@
                     url: "update_status5",
                     data: {
                         id: id,
-                        status: $('#select-status option:selected').val()
+                        status: $('#select-status option:selected').val(),
+                        comment: $('#comment5').val(),
                     },
                     dataType: "json",
                     success: function(response) {
                         if (response.success) {
-                            var group, year;
-                            e.preventDefault();
                             var group, year;
                             year = $('.table-tqf5').find('select[name=select_year]').val();
                             group = $('.table-tqf5').find('select[name=select_group]').val();
@@ -343,76 +360,6 @@
                             var url = window.location.pathname + "?group=" + group + '&&year=' +
                                 year + '&&page=' + page;
                             loadPosts(url);
-                            // $.ajax({
-                            //     type: "get",
-                            //     url: "get_table_tqf5?group=" + group + '&&year=' +
-                            //         year,
-                            //     dataType: "html",
-                            //     success: function(response) {
-
-                            //         $('.table-tqf5').find('#show-tqf5').html(
-                            //             response);
-                            //         $('#example').DataTable({
-                            //             "order": [],
-                            //             "language": {
-                            //                 "sEmptyTable": "ไม่มีข้อมูลในตาราง",
-                            //                 "sInfo": "แสดง _START_ ถึง _END_ จาก _TOTAL_ รายการ",
-                            //                 "sInfoEmpty": "แสดง 0 ถึง 0 จาก 0 รายการ",
-                            //                 "sInfoFiltered": "(กรองข้อมูล _MAX_ ทุกรายการ)",
-                            //                 "sInfoThousands": ",",
-                            //                 "sLengthMenu": "แสดง _MENU_ รายการ",
-                            //                 "sLoadingRecords": "กำลังโหลดข้อมูล...",
-                            //                 "sProcessing": "กำลังดำเนินการ...",
-                            //                 "sSearch": "ค้นหา: ",
-                            //                 "sZeroRecords": "ไม่พบข้อมูล",
-                            //                 "oPaginate": {
-                            //                     "sFirst": "หน้าแรก",
-                            //                     "sPrevious": "ก่อนหน้า",
-                            //                     "sNext": "ถัดไป",
-                            //                     "sLast": "หน้าสุดท้าย"
-                            //                 },
-                            //                 "oAria": {
-                            //                     "sSortAscending": ": เปิดใช้งานการเรียงข้อมูลจากน้อยไปมาก",
-                            //                     "sSortDescending": ": เปิดใช้งานการเรียงข้อมูลจากมากไปน้อย"
-                            //                 }
-                            //             },
-                            //             columnDefs: [{
-                            //                 orderable: false,
-                            //                 targets: 3,
-                            //             }, {
-                            //                 orderable: false,
-                            //                 targets: 4,
-                            //             }, {
-                            //                 orderable: false,
-                            //                 targets: 5,
-                            //             }, {
-                            //                 orderable: false,
-                            //                 targets: 6,
-                            //             }, {
-                            //                 orderable: false,
-                            //                 targets: 7,
-                            //             }, {
-                            //                 orderable: false,
-                            //                 targets: 8,
-                            //             }, {
-                            //                 orderable: false,
-                            //                 targets: 9,
-                            //             }, {
-                            //                 orderable: false,
-                            //                 targets: 10,
-                            //             }, {
-                            //                 orderable: false,
-                            //                 targets: 11,
-                            //             }, {
-                            //                 orderable: false,
-                            //                 targets: 12,
-                            //             }, {
-                            //                 orderable: false,
-                            //                 targets: 13,
-                            //             }]
-                            //         });
-                            //     }
-                            // });
                             // }
                             Swal.fire({
                                 position: 'top-end',
@@ -421,10 +368,7 @@
                                 showConfirmButton: false,
                                 timer: 1500
                             });
-
                             $('#status5').modal('toggle');
-
-
                         } else {
                             Swal.fire({
                                 position: 'top-end',
@@ -453,6 +397,7 @@
         $('select[name=select_year],select[name=select_group],select[name=select_branch]').change(
             function(e) {
                 e.preventDefault();
+                var select = $(this).attr('name');
                 if (select == 'select_branch') {
                     $('select[name=select_group]').val('');
                 } else {

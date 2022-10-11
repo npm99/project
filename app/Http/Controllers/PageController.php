@@ -98,13 +98,13 @@ class PageController extends Controller
                     if (count($g) > 0) {
                         foreach ($g as $key => $val) {
                             $t3_not = TQF3::where('tqf3.group_sub', $val->groupID)
-                                ->whereNotNull('deadline')->where('tqf3.Year_idYear', $y_id)->whereNotIn('tqf3.status', [1, 4])->count();
+                                ->whereNotNull('deadline')->where('tqf3.Year_idYear', $y_id)->whereNotIn('tqf3.status', [0, 3])->count();
                             $t3_done = TQF3::where('tqf3.group_sub', $val->groupID)
-                                ->whereNotNull('deadline')->where('tqf3.Year_idYear', $y_id)->whereIn('tqf3.status', [1, 4])->count();
+                                ->whereNotNull('deadline')->where('tqf3.Year_idYear', $y_id)->whereIn('tqf3.status', [1, 2, 4])->count();
                             $t5_not = TQF5::where('tqf5.group_sub', $val->groupID)
-                                ->whereNotNull('deadline')->where('tqf5.Year_idYear', $y_id)->whereNotIn('tqf5.status', [1, 4])->count();
+                                ->whereNotNull('deadline')->where('tqf5.Year_idYear', $y_id)->whereNotIn('tqf5.status', [0, 3])->count();
                             $t5_done = TQF5::where('tqf5.group_sub', $val->groupID)
-                                ->whereNotNull('deadline')->where('tqf5.Year_idYear', $y_id)->whereIn('tqf5.status', [1, 4])->count();
+                                ->whereNotNull('deadline')->where('tqf5.Year_idYear', $y_id)->whereIn('tqf5.status', [1, 2, 4])->count();
                             // print_r($t3_done . '</br>');
                             $value->tqf3_done += $t3_done;
                             $value->tqf3_not += $t3_not;
@@ -713,7 +713,7 @@ class PageController extends Controller
         }
         return view('officer/user', compact('data', 'form', 'level', 'fac', 'ben'));
     }
- 
+
     public function addterm(Request $request)
     {
         $data = Year::orderBy('Year', 'desc')->orderBy('term', 'desc')->paginate(20);

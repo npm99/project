@@ -216,7 +216,18 @@ function savetqf3() {
     var _token = $('#addtqf3 input[name=_token]').val();
     var id_tqf3 = $('#addtqf3 input[name="idtqf3"]').val();
     var term3_id = $('#addtqf3 select[name="tqf_year"]').val()
-    var group = $('#addtqf3 select[name="tqf_group"]').val()
+    var group = $('#addtqf3 select[name="tqf_group"]').val();
+    var teach = $('#addtqf3 select[name="tqf_teacher"]').val();
+
+    if (!teacher3_id.includes(teach)) {
+        Swal.fire({
+            title: 'กรุณาเลือกอาจารย์ผู้รับผิดชอบรายวิชาที่อยู่ในกลุ่มอาจารย์',
+            icon: 'error',
+            confirmButtonText: 'ตกลง',
+            showCloseButton: true
+        });
+        return;
+    }
 
     if (teacher3_id.length == 0 && selectids3_arr.length == 0 && term3_id == '' && date == '' && groupids3_arr.length == 0) {
         // alert('กรุณากรอกข้อมูลให้ครบ');
@@ -249,6 +260,10 @@ function savetqf3() {
             text_check.push('วันที่สิ้นสุดการส่งมคอ.');
             $('#date_empty').text('กรุณาเลือกวันที่สิ้นสุดการส่งมคอ');
         }
+        if (teach == '') {
+            // alert('กรุณาเลือกวันที่สิ้นสุดการส่งมคอ.');
+            text_check.push('อาจารย์ผู้รับผิดชอบรายวิชา');
+        }
         Swal.fire({
             text: 'กรุณาใส่ข้อมูล' + text_check,
             icon: 'error',
@@ -264,7 +279,8 @@ function savetqf3() {
             date: date,
             arr_sub: JSON.stringify(selectids3_arr),
             id_tqf3: id_tqf3,
-            group: group
+            group: group,
+            teach: teach
         }
         console.log(data);
 
@@ -281,6 +297,7 @@ function savetqf3() {
                 id_tqf3: id_tqf3,
                 filetqf: '',
                 arr_group: JSON.stringify(groupids3_arr),
+                teach: teach
             },
             //JSON.stringify()
             success: function(response) {
@@ -306,7 +323,7 @@ function savetqf3() {
                     }, 300);
                 } else {
                     Swal.fire({
-                        title: 'ข้อมูลซ้ำ',
+                        title: response.message,
                         icon: 'error',
                         confirmButtonText: 'ตกลง',
                         showCloseButton: true
@@ -339,10 +356,22 @@ function edittqf3() {
     var id_sub = $('#edittqf3 #tabletqf tr').data('subject');
     var group = $('#edittqf3 select[name="tqf_group"]').val();
     var is_file = $('#edittqf3 input[name="is_file"]').val();
+    var teach = $('#edittqf3 [name="tqf_teacher"]').val();
+
+
     console.log(is_file);
     var text_check = []
     if (is_file == 0) {
-        if (teacher3_id.length == 0 && _term3_id == '' && date == '') {
+        if (!teacher3_id.includes(teach)) {
+            Swal.fire({
+                title: 'กรุณาเลือกอาจารย์ผู้รับผิดชอบรายวิชาที่อยู่ในกลุ่มอาจารย์',
+                icon: 'error',
+                confirmButtonText: 'ตกลง',
+                showCloseButton: true
+            });
+            return;
+        }
+        if (teacher3_id.length == 0 && _term3_id == '' && date == '' && teach == '') {
             // alert('กรุณากรอกข้อมูลให้ครบ');
             Swal.fire({
                 title: 'กรุณากรอกข้อมูลให้ครบ',
@@ -365,6 +394,10 @@ function edittqf3() {
                 text_check.push('วันที่สิ้นสุดการส่งมคอ.');
                 $('#date_empty').text('กรุณาเลือกวันที่สิ้นสุดการส่งมคอ');
             }
+            if (teach == '') {
+                // alert('กรุณาเลือกวันที่สิ้นสุดการส่งมคอ.');
+                text_check.push('อาจารย์ผู้รับผิดชอบรายวิชา');
+            }
             Swal.fire({
                 text: 'กรุณาใส่ข้อมูล' + text_check,
                 icon: 'error',
@@ -374,15 +407,16 @@ function edittqf3() {
             // alert('กรุณาเลือก' + text_check);
         } else {
             data = {
-                    _token: _token,
-                    term_id: _term3_id,
-                    teacher_id: teacher3_id,
-                    date: date,
-                    arr_sub: JSON.stringify(id_sub),
-                    id_tqf3: id_tqf3,
-                    group: group
-                }
-                // console.log(data);
+                _token: _token,
+                term_id: _term3_id,
+                teacher_id: teacher3_id,
+                date: date,
+                arr_sub: JSON.stringify(id_sub),
+                id_tqf3: id_tqf3,
+                group: group,
+                teach: teach
+            }
+            console.log(data);
             $('#loader').removeClass('hidden');
             $.ajax({
                 url: 'tqf/edittqf3_new',
@@ -1022,6 +1056,18 @@ function savetqf5() {
     var _token = $('#addtqf5 input[name=_token]').val();
     var id_tqf5 = $('#addtqf5 input[name="idtqf5"]').val();
     var term5_id = $('#addtqf5 select[name="tqf_year"]').val()
+    var teach = $('#addtqf5 select[name="tqf_teacher"]').val();
+
+    if (!teacher5_id.includes(teach)) {
+        Swal.fire({
+            title: 'กรุณาเลือกอาจารย์ผู้รับผิดชอบรายวิชาที่อยู่ในกลุ่มอาจารย์',
+            icon: 'error',
+            confirmButtonText: 'ตกลง',
+            showCloseButton: true
+        });
+        return;
+    }
+
     if (teacher5_id.length == 0 && selectids5_arr.length == 0 && term5_id == '' && date == '') {
         // alert('กรุณากรอกข้อมูลให้ครบ');
         Swal.fire({
@@ -1051,6 +1097,10 @@ function savetqf5() {
             // alert('กรุณาเลือกวันที่สิ้นสุดการส่งมคอ.');
             text_check.push('วันที่สิ้นสุดการส่งมคอ.');
         }
+        if (teach == '') {
+            // alert('กรุณาเลือกวันที่สิ้นสุดการส่งมคอ.');
+            text_check.push('อาจารย์ผู้รับผิดชอบรายวิชา');
+        }
         Swal.fire({
             text: 'กรุณาใส่ข้อมูล' + text_check,
             icon: 'error',
@@ -1065,7 +1115,7 @@ function savetqf5() {
             date: date,
             arr_sub: JSON.stringify(selectids5_arr),
             arr_group: JSON.stringify(groupids5_arr),
-            id_tqf5: id_tqf5
+            id_tqf5: id_tqf5,
         }
         console.log(data);
 
@@ -1138,9 +1188,22 @@ function edittqf5() {
     var id_sub = $('#edittqf5 #tabletqf tr').data('subject');
     var group = $('#edittqf5 select[name="tqf_group"]').val()
     var is_file = $('#edittqf5 input[name="is_file"]').val()
+    var teach = $('#edittqf5 [name="tqf_teacher"]').val();
 
     var text_check = [];
     if (is_file == 0) {
+        console.log(teach);
+        console.log(teacher5_id);
+        console.log(!teacher5_id.includes(teach));
+        if (!teacher5_id.includes(parseInt(teach))) {
+            Swal.fire({
+                title: 'กรุณาเลือกอาจารย์ผู้รับผิดชอบรายวิชาที่อยู่ในกลุ่มอาจารย์',
+                icon: 'error',
+                confirmButtonText: 'ตกลง',
+                showCloseButton: true
+            });
+            return;
+        }
         if (teacher5_id.length == 0 && _term5_id == '' && date == '') {
             // alert('กรุณากรอกข้อมูลให้ครบ');
             Swal.fire({
@@ -1162,6 +1225,10 @@ function edittqf5() {
                 // alert('กรุณาเลือกวันที่สิ้นสุดการส่งมคอ.');
                 text_check.push('วันที่สิ้นสุดการส่งมคอ.');
             }
+            if (teach == '') {
+                // alert('กรุณาเลือกวันที่สิ้นสุดการส่งมคอ.');
+                text_check.push('อาจารย์ผู้รับผิดชอบรายวิชา');
+            }
             Swal.fire({
                 text: 'กรุณาใส่ข้อมูล' + text_check,
                 icon: 'error',
@@ -1176,7 +1243,8 @@ function edittqf5() {
                     date: date,
                     arr_sub: JSON.stringify(id_sub),
                     id_tqf5: id_tqf5,
-                    group: group
+                    group: group,
+                    teach: teach
                 }
                 //// console.log(data);
             $('#loader').removeClass('hidden');
@@ -1187,8 +1255,8 @@ function edittqf5() {
                 data: data,
                 //JSON.stringify()
                 success: function(response) {
+                    $('#loader').addClass('hidden');
                     if (response.success) {
-                        $('#loader').addClass('hidden');
                         selectids5_arr = [];
                         teacher5_id = [];
                         Swal.fire({
@@ -1427,8 +1495,9 @@ function teacherFileTqf5() {
         enctype: 'multipart/form-data',
         data: formData,
         success: function(response) {
+            $('#loader').addClass('hidden');
             if (response.success) {
-                $('#loader').addClass('hidden');
+
                 // console.log('aaa');
                 Swal.fire({
                     title: 'เพิ่มข้อมูลสำเร็จ',

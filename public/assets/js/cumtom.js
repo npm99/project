@@ -497,8 +497,10 @@ function edit_TQF3(data) {
     $(open).find('input[name="dateline"]').val(data.deadline);
     $(open).find('[name="teacher"]').val(data.user_userID).change();
     $(open).find('[name="tqf_group"]').val(data.group_sub);
+    $(open).find('[name="tqf_teacher"]').val(data.teacher);
     $(open).find('[name="sub_select"]').val(data.subject_idSubject);
     $('select[name="tqf_group"]').selectpicker('refresh');
+    $('select[name="tqf_teacher"]').selectpicker('refresh');
     console.log(data.group_sub);
     $('#tabletqf').append(row2);
     console.log(teacher3_id);
@@ -551,8 +553,11 @@ function edit_TQF5(data) {
     }
     $(open).find('[name="teacher"]').val(data.user_userID).change();
     $(open).find('[name="tqf_group"]').val(data.group_sub);
+    $(open).find('[name="tqf_teacher"]').val(data.teacher);
     $(open).find('[name="sub_select"]').val(data.subject_idSubject);
     $('select[name="tqf_group"]').selectpicker('refresh');
+    $('select[name="tqf_teacher"]').selectpicker('refresh');
+
 
     $('#tabletqf').append(row2);
     $('#data_user tr').find('td:eq(4) input#checkboxt5').prop('checked', false);
