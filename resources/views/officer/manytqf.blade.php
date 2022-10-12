@@ -27,7 +27,8 @@
                                 id="row-addtqf-{{ isset($item->tqf3ID) ? $item->tqf3ID : $item->tqf5ID }}"
                                 name="row-addtqf" data-user="{{ $item->iduser }}" data-group="{{ $item->group_sub }}"
                                 data-subject="{{ $item->subsubject->idsubject }}"
-                                data-id="{{ isset($item->tqf3ID) ? $item->tqf3ID : $item->tqf5ID }}">
+                                data-id="{{ isset($item->tqf3ID) ? $item->tqf3ID : $item->tqf5ID }}"
+                                data-teacher="{{ $item->teacher }}">
                             <label class="custom-control-label"
                                 for="row-addtqf-{{ isset($item->tqf3ID) ? $item->tqf3ID : $item->tqf5ID }}"></label>
                         </div>

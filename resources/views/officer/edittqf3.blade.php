@@ -767,6 +767,7 @@
                         teacher_id: JSON.stringify(node.data('user')),
                         arr_sub: node.data('subject'),
                         arr_group: node.data('group'),
+                        teacher: node.data('teacher'),
                         id_tqf3: 0
                     }
                     input.push(value);
@@ -777,6 +778,7 @@
                         teacher_id: JSON.stringify(node.data('user')),
                         arr_sub: node.data('subject'),
                         arr_group: node.data('group'),
+                        teacher: node.data('teacher'),
                         id_tqf3: 0
                     }
                     input.splice($.inArray(value, input), 1);
@@ -829,6 +831,7 @@
                     teacher_id: JSON.stringify($(this).data('user')),
                     arr_sub: $(this).data('subject'),
                     arr_group: $(this).data('group'),
+                    teacher: node.data('teacher'),
                     id_tqf3: 0,
 
                 }
@@ -840,6 +843,7 @@
                     teacher_id: JSON.stringify($(this).data('user')),
                     arr_sub: $(this).data('subject'),
                     arr_group: $(this).data('group'),
+                    teacher: node.data('teacher'),
                     id_tqf3: 0
                 }
                 input.splice($.inArray(value, input), 1);

@@ -378,6 +378,7 @@ class TQF5Controller extends Controller
                     $tqf5->Year_idYear = $request->term_id;
                     $tqf5->subject_idSubject = $data[$i]->arr_sub;
                     $tqf5->group_sub = $data[$i]->arr_group;
+                    $tqf5->teacher = $data[$i]->teacher;
                     $tqf5->filetqf5 = '';
                     $tqf5->deadline = $request->date;
                     $tqf5->create_date = date('Y-m-d H:i:s');
@@ -386,6 +387,7 @@ class TQF5Controller extends Controller
                     $tqf3->Year_idYear = $request->term_id;
                     $tqf3->subject_idSubject = $data[$i]->arr_sub;
                     $tqf3->group_sub = $data[$i]->arr_group;
+                    $tqf3->teacher = $data[$i]->teacher;
                     $tqf3->filetqf3 = '';
                     $tqf3->deadline = date('Y-m-d', strtotime($request->date . ' - 6 month'));
                     $tqf3->create_date = date('Y-m-d H:i:s');
