@@ -368,6 +368,16 @@
                     });
                     return;
                 }
+                if ($('#comment3').val() == '') {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'warning',
+                        title: 'กรุณากรอกข้อมูลความคิดเห็น',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    return;
+                }
                 $.ajax({
                     type: "post",
                     url: "update_status3",
