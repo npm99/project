@@ -160,7 +160,7 @@
                                                     </td>
                                                 @elseif ($item->status == 3)
                                                     <td style="text-align: center;font-size:14px;">
-                                                        <span class="badge bg-danger  mb-1">ส่งกลับแก้ไข</span>
+                                                        <span class="badge bg-danger mb-1">ส่งกลับแก้ไข</span>
                                                         <a href="#status{{ $item->tqf5ID }}" data-toggle="modal"
                                                             class="btn btn-secondary btn-sm"
                                                             style="font-size: 12px;">ความคิดเห็น</a>
@@ -289,12 +289,12 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="addtqf5" tabindex="-1" role="dialog" aria-labelledby="addtqf3Label"
+            <div class="modal fade" id="addtqf5" tabindex="-1" role="dialog" aria-labelledby="addtqf5Label"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="addtqf3Label">บันทึกมคอ. 5 แบบไฟล์</h5>
+                            <h5 class="modal-title" id="addtqf5Label">บันทึกมคอ. 5 แบบไฟล์</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>

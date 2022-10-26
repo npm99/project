@@ -242,7 +242,7 @@ class TQF5Controller extends Controller
         if ($t) {
             $tqf = TQF5::join('user_tqf5', 'tqf5.tqf5ID', '=', 'user_tqf5.tqf5ID')
                 // ->has('tqf5_1')->has('tqf5_2')->has('tqf5_3')->has('tqf5_4')->has('tqf5_5')->has('tqf5_6')->has('tqf5_7')
-                ->where('tqf3.status', 2)->where('send_file', 0)->where('user_tqf5.userID', $i->userID)
+                ->where('tqf5.status', 2)->where('send_file', 0)->where('user_tqf5.userID', $i->userID)
                 ->where('tqf5.subject_idSubject', $t->subject_idSubject)->where('tqf5.tqf5ID', '!=', $id)->get();
         }
         if (count($tqf) > 0) {

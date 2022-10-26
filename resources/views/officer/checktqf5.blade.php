@@ -228,45 +228,46 @@
         </div>
     </div>
     <div class="modal fade" id="status5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">เลือกสถานะ</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group row">
-                        <label for="status5" class="col-sm-4 col-form-label">สถานะ</label>
-                        <div class="col-sm-8">
-                            <select id="select-status" name="status5" class="form-control">
-                                <option value="" selected disabled>เลือกข้อมูล...</option>
-                                <!--<option value="1"></option>-->
-                                <option value="2">ถูกต้อง</option>
-                                <option value="3">ส่งกลับแก้ไข</option>
-                            </select>
-                            {{-- <span style="color: red" id="export-year-empty"></span> --}}
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">เลือกสถานะ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input type="text" name="id_status" hidden>
+                        <div class="form-group row">
+                            <label for="status5" class="col-sm-4 col-form-label">สถานะ</label>
+                            <div class="col-sm-8">
+                                <select id="select-status" name="status5" class="form-control">
+                                    <option value="" selected disabled>เลือกข้อมูล...</option>
+                                    <!--<option value="1"></option>-->
+                                    <option value="2">ถูกต้อง</option>
+                                    <option value="3">ส่งกลับแก้ไข</option>
+                                </select>
+                                {{-- <span style="color: red" id="export-year-empty"></span> --}}
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row" id="status-comment" style="display: none">
-                        <label for="comment5" class="col-sm-4 col-form-label">ความคิดเห็น</label>
-                        <div class="col-sm-8">
-                            <textarea class="form-control" id="comment5" name="comment" rows="4"></textarea>
-                            {{-- <span style="color: red" id="export-year-empty"></span> --}}
+                        <div class="form-group row" id="status-comment" style="display: none">
+                            <label for="comment5" class="col-sm-4 col-form-label">ความคิดเห็น</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" id="comment5" name="comment" rows="4"></textarea>
+                                {{-- <span style="color: red" id="export-year-empty"></span> --}}
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="save_status">บันทึก</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิดออก</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="save_status">บันทึก</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิดออก</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 @endsection
 @section('script')
@@ -320,6 +321,7 @@
         var page = 1
         $('#status5').on('show.bs.modal', function(e) {
             var id = $(e.relatedTarget).data('text');
+            $('[name="id_status"]').val(id);
             $('#status-comment').hide();
             $("textarea").each(function() {
                 // console.log(this.style.height);
@@ -331,72 +333,72 @@
                     $('#status-comment').show();
                 }
             });
-            $('#save_status').click(function(e) {
-                if ($('#select-status option:selected').val() == '') {
-                    Swal.fire({
-                        position: 'top-end',
-                        icon: 'warning',
-                        title: 'กรุณาเลือกสถานะ',
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                    return;
-                }
-                if ($('#comment5').val() == '') {
-                    Swal.fire({
-                        position: 'top-end',
-                        icon: 'warning',
-                        title: 'กรุณากรอกข้อมูลความคิดเห็น',
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                    return;
-                }
-                $.ajax({
-                    type: "post",
-                    url: "update_status5",
-                    data: {
-                        id: id,
-                        status: $('#select-status option:selected').val(),
-                        comment: $('#comment5').val(),
-                    },
-                    dataType: "json",
-                    success: function(response) {
-                        if (response.success) {
-                            var group, year;
-                            year = $('.table-tqf5').find('select[name=select_year]').val();
-                            group = $('.table-tqf5').find('select[name=select_group]').val();
 
-                            var url = window.location.pathname + "?group=" + group + '&&year=' +
-                                year + '&&page=' + page;
-                            loadPosts(url);
-                            // }
-                            Swal.fire({
-                                position: 'top-end',
-                                icon: 'success',
-                                title: 'บันทึกสำเร็จ',
-                                showConfirmButton: false,
-                                timer: 1500
-                            });
-                            $('#status5').modal('toggle');
-                        } else {
-                            Swal.fire({
-                                position: 'top-end',
-                                icon: 'danger',
-                                title: 'บันทึกไม่สำเร็จ',
-                                showConfirmButton: false,
-                                timer: 1500
-                            });
-                        }
-                    },
-                    error: function(error) {
-                        // // console.log(error);
-
-                    }
+        });
+        $('#save_status').click(function(e) {
+            if ($('#select-status option:selected').val() == '') {
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'warning',
+                    title: 'กรุณาเลือกสถานะ',
+                    showConfirmButton: false,
+                    timer: 1500
                 });
+                return;
+            }
+            if ($('#select-status option:selected').val() - 0 == 3 && $('#comment5').val() == '') {
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'warning',
+                    title: 'กรุณากรอกข้อมูลความคิดเห็น',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                return;
+            }
+            $.ajax({
+                type: "post",
+                url: "update_status5",
+                data: {
+                    id: $('[name="id_status"]').val(),
+                    status: $('#select-status option:selected').val(),
+                    comment: $('#comment5').val(),
+                },
+                dataType: "json",
+                success: function(response) {
+                    if (response.success) {
+                        var group, year;
+                        year = $('.table-tqf5').find('select[name=select_year]').val();
+                        group = $('.table-tqf5').find('select[name=select_group]').val();
+
+                        var url = window.location.pathname + "?group=" + group + '&&year=' +
+                            year + '&&page=' + page;
+                        loadPosts(url);
+                        // }
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'บันทึกสำเร็จ',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        $('#status5').modal('toggle');
+                    } else {
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'danger',
+                            title: 'บันทึกไม่สำเร็จ',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                    }
+                },
+                error: function(error) {
+                    // // console.log(error);
+
+                }
             });
         });
-
         $('#exportTQF5').on('show.bs.modal', function(e) {
             console.log(check_year);
             $('#exportTQF5 #select-year').val(check_year);

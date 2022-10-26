@@ -167,7 +167,7 @@
                                                     <td style="text-align: center;font-size:14px;color:white">
                                                         <span class="badge bg-success">ถูกต้อง</span>
                                                     </td>
-                                                @elseif ($item->status == 3)
+                                                    @elseif ($item->status == 3)
                                                     <td style="text-align: center;font-size:14px;">
                                                         <span class="badge bg-danger mb-1">ส่งกลับแก้ไข</span>
                                                         <a href="#status{{ $item->tqf3ID }}" data-toggle="modal"
@@ -210,9 +210,9 @@
                                                         @if (!($item->send_file == 1 && $item->status == 1))
                                                             <li class="inline-item mb-1">
                                                                 <a href="{{ url('tqf/addtqf3/' . $item->tqf3ID) }}"
-                                                                    class="btn btn-success btn-sm rounded-1"
-                                                                    type="button" data-toggle="tooltip"
-                                                                    data-placement="top" title="บันทึกมคอ.3">
+                                                                    class="btn btn-success btn-sm rounded-1" type="button"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="บันทึกมคอ.3">
                                                                     <i class="fa fa-table"></i></a>
                                                             </li>
                                                         @endif {{-- @if ($item->status == 1) disabled="disabled" @endif --}}

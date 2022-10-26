@@ -831,7 +831,7 @@
                     teacher_id: JSON.stringify($(this).data('user')),
                     arr_sub: $(this).data('subject'),
                     arr_group: $(this).data('group'),
-                    teacher: node.data('teacher'),
+                    teacher: $(this).data('teacher'),
                     id_tqf3: 0,
 
                 }

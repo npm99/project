@@ -170,14 +170,14 @@ Route::get('downloadtqf5', 'PageController@downloadtqf5');
 Route::get('download/{fileID}', 'DocumentController@downloadfile');
 
 Route::get('/login', function () {
-  $url = "https://service.eng.rmuti.ac.th/sso/gw/login/?id=tqfnmp&&msg=Login Seccess";
+  $url = env('SSO_Login');
   return redirect()->to($url);
   // Redirect::to($url);
 })->name('login');
 Route::get('/logout', function () {
-  $url = "https://service.eng.rmuti.ac.th/sso/gw/logout?id=tqfnmp&&msg=Logout Success";
+  $url =  env('SSO_Logout');
   return redirect()->to($url);
-  // Redirect::to($url);
+  // Redirect::to($url); 
 });
 
 Route::get('eng-login/login', 'LoginController@login');

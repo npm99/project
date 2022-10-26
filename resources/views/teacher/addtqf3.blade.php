@@ -32,7 +32,7 @@
                     <h5>รายละเอียดของรายวิชา (มคอ.3) วิชา {{ $tqf->subsubject->THsubject }}</h5>
                     {{-- <br> --}}
                     <span style="margin-left: 20px;color: #17a2b8;"><b>* หากต้องการกรอกข้อมูลว่าง กรุณาใส่ - ลงในช่อง และระบบจัดเก็บข้อมูลไว้ หากยังไม่กดบันทึก (สถานะการจัดทำจะไม่แสดง หากไม่บันทึกข้อมูล)</b></span>
-                    
+
                     
                     {{-- <div class="row exports-tqf3 align-items-center" style="float: right;margin-right: 10px"> --}}
                     {{-- <div class="row" style="width: 300px;float: right;margin-right: 10px">

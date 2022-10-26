@@ -250,6 +250,7 @@
                 </div>
                 <div class="modal-body">
                     <form>
+                        <input type="text" name="id_status" hidden>
                         <div class="form-group row">
                             <label for="status3" class="col-sm-4 col-form-label">สถานะ</label>
                             <div class="col-sm-8">
@@ -345,7 +346,9 @@
         // load();
         var page = 1
         $('#status3').on('show.bs.modal', function(e) {
+            console.log($(this));
             var id = $(e.relatedTarget).data('text');
+            $('[name="id_status"]').val(id);
             $('#status-comment').hide();
             $("textarea").each(function() {
                 // console.log(this.style.height);
@@ -357,69 +360,71 @@
                     $('#status-comment').show();
                 }
             });
-            $('#save_status').click(function(e) {
-                if ($('#select-status option:selected').val() == '') {
-                    Swal.fire({
-                        position: 'top-end',
-                        icon: 'warning',
-                        title: 'กรุณาเลือกสถานะ',
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                    return;
-                }
-                if ($('#comment3').val() == '') {
-                    Swal.fire({
-                        position: 'top-end',
-                        icon: 'warning',
-                        title: 'กรุณากรอกข้อมูลความคิดเห็น',
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                    return;
-                }
-                $.ajax({
-                    type: "post",
-                    url: "update_status3",
-                    data: {
-                        id: id,
-                        status: $('#select-status option:selected').val(),
-                        comment: $('#comment3').val(),
-                    },
-                    dataType: "json",
-                    success: function(response) {
-                        if (response.success) {
-                            var group, year;
-                            year = $('.table-tqf3').find('select[name=select_year]').val();
-                            group = $('.table-tqf3').find('select[name=select_group]').val();
 
-                            var url = window.location.pathname + "?group=" + group + '&&year=' +
-                                year + '&&page=' + page;
-                            loadPosts(url);
-                            // }
-                            Swal.fire({
-                                position: 'top-end',
-                                icon: 'success',
-                                title: 'บันทึกสำเร็จ',
-                                showConfirmButton: false,
-                                timer: 1500
-                            });
-                            $('#status3').modal('toggle');
-                        } else {
-                            Swal.fire({
-                                position: 'top-end',
-                                icon: 'danger',
-                                title: 'บันทึกไม่สำเร็จ',
-                                showConfirmButton: false,
-                                timer: 1500
-                            });
-                        }
-                    },
-                    error: function(error) {
-                        // // console.log(error);
+        });
 
-                    }
+        $('#save_status').click(function(e) {
+            if ($('#select-status option:selected').val() == '') {
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'warning',
+                    title: 'กรุณาเลือกสถานะ',
+                    showConfirmButton: false,
+                    timer: 1500
                 });
+                return;
+            }
+            if ($('#select-status option:selected').val() - 0 == 3 && $('#comment3').val() == '') {
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'warning',
+                    title: 'กรุณากรอกข้อมูลความคิดเห็น',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                return;
+            }
+            $.ajax({
+                type: "post",
+                url: "update_status3",
+                data: {
+                    id: $('[name="id_status"]').val(),
+                    status: $('#select-status option:selected').val(),
+                    comment: $('#comment3').val(),
+                },
+                dataType: "json",
+                success: function(response) {
+                    if (response.success) {
+                        var group, year;
+                        year = $('.table-tqf3').find('select[name=select_year]').val();
+                        group = $('.table-tqf3').find('select[name=select_group]').val();
+
+                        var url = window.location.pathname + "?group=" + group + '&&year=' +
+                            year + '&&page=' + page;
+                        loadPosts(url);
+                        // }
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'บันทึกสำเร็จ',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        $('#status3').modal('toggle');
+                    } else {
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'danger',
+                            title: 'บันทึกไม่สำเร็จ',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                    }
+                },
+                error: function(error) {
+                    // // console.log(error);
+
+                }
             });
         });
 

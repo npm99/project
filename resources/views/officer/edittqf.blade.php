@@ -50,13 +50,13 @@
                                 <!-- Call to action buttons <i class="fa fa-edit"></i>-->
                                 <button class="btn btn-success btn-sm rounded-1 m-1" type="button"
                                     @if (isset($item->tqf3ID)) onclick="edit_TQF3({{ $item }})"  data-target="#edittqf3"
-                                     @else onclick="edit_TQF5({{ $item }})"  data-target="#edittqf5" @endif
+                                                                 @else onclick="edit_TQF5({{ $item }})"  data-target="#edittqf5" @endif
                                     data-toggle="modal" title="แก้ไข">แก้ไข</button>
 
                                 <button class="btn btn-danger btn-sm rounded-1" type="button"
                                     @if (isset($item->tqf3ID)) onclick="deletetqf3({{ $item->tqf3ID }})"
-                                  @else
-                                  onclick="deletetqf5({{ $item->tqf5ID }})" @endif
+                                                              @else
+                                                              onclick="deletetqf5({{ $item->tqf5ID }})" @endif
                                     data-toggle="tooltip" data-placement="top" title="ลบ"><i
                                         class="fa fa-trash"></i></button>
 
@@ -179,12 +179,12 @@
                             <td>{{ $item->term }} </td>
                             <td>{{ $item->Year }} </td>
                             {{-- <td class="text-center">
-                                @if ($item->active == 0)
-                                    <span class="badge badge-danger">not active</span>
-                                @else
-                                    <span class="badge badge-success">active</span>
-                                @endif
-                            </td> --}}
+                                                            @if ($item->active == 0)
+                                                                <span class="badge badge-danger">not active</span>
+                                                            @else
+                                                                <span class="badge badge-success">active</span>
+                                                            @endif
+                                                        </td> --}}
                             {{-- <i class="fa fa-edit"></i> --}}
                             <td style="text-align: center">
                                 <button class="btn btn-success btn-sm rounded-1 text-center" type="button"
@@ -244,29 +244,29 @@
                                                                         @endfor
                                                                     </select>
                                                                     {{-- <input class="form-control "
-                                                                type="number" name="year"
-                                                                id="textYear" placeholder="2563"
-                                                                value="{{ $item->Year }}"> --}}
+                                                                                            type="number" name="year"
+                                                                                            id="textYear" placeholder="2563"
+                                                                                            value="{{ $item->Year }}"> --}}
                                                                 </div>
                                                                 <span style="color: red" id="year_empty"></span>
                                                             </div>
                                                         </div>
                                                         {{-- <div class="form-group row">
-                                                            <label for="inputPassword"
-                                                                class="col-sm-2 col-form-label">สถานะ</label>
-                                                            <div class="col-sm-10">
-                                                                <select id="active" name="active"
-                                                                    class="form-control">
-                                                                    <option value="1"
-                                                                        {{ $item->active == 1 ? 'selected' : '' }}>
-                                                                        active
-                                                                    </option>
-                                                                    <option value="0"
-                                                                        {{ $item->active == 0 ? 'selected' : '' }}>not
-                                                                        active</option>
-                                                                </select>
-                                                            </div>
-                                                        </div> --}}
+                                                                                        <label for="inputPassword"
+                                                                                            class="col-sm-2 col-form-label">สถานะ</label>
+                                                                                        <div class="col-sm-10">
+                                                                                            <select id="active" name="active"
+                                                                                                class="form-control">
+                                                                                                <option value="1"
+                                                                                                    {{ $item->active == 1 ? 'selected' : '' }}>
+                                                                                                    active
+                                                                                                </option>
+                                                                                                <option value="0"
+                                                                                                    {{ $item->active == 0 ? 'selected' : '' }}>not
+                                                                                                    active</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div> --}}
                                                     </form>
                                                 </div>
                                             </div>
