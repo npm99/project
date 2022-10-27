@@ -1,0 +1,43 @@
+version: '3.1'
+services:
+  composer:
+    image: composer
+    volumes:
+      - .:/app
+    command:
+      [
+        'bash',
+        '-c',
+        'composer install && if [[ -f /app/.env ]]; then echo ".env file already exists"; else cp /app/.env.sample /app/.env && php artisan key:generate; fi'
+      ]
+
+  nginx:
+    image: nginx
+    volumes:
+      - .dockerconfig/nginx/conf.d:/etc/nginx/conf.d
+      - .:/var/www/html
+    depends_on:
+      - php
+      - mariadb
+    ports:
+      - 8080:80
+
+  php:
+    build: .dockerconfig/php
+    volumes:
+      - .dockerconfig/php/conf.d:/user/local/etc/php/conf.d
+      - .:/var/www/html
+    depends_on:
+      - composer
+    expose:
+      - 9000
+
+  mariadb:
+    image: mariadb
+    environment:
+      # MYSQL_ROOT_PASSWORD: "super-secret-password"
+      MYSQL_DATABASE: "tqf"
+      MYSQL_USER: "tqf"
+      MYSQL_PASSWORD: "tqf1234"
+    expose:
+      - 3306
